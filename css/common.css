@@ -1,0 +1,122 @@
+@import url(normalize.min.css);
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+:root{
+    --body-ff: 'Noto Sans KR', sans-serif;
+    --body-fz:1rem;
+    --line-height:27px;
+    --primary-c: #a50034;
+    --secondary-c: #6b6b6b;
+    --white: #fff;
+    --title-color:#2c2c2c;
+    --magin: 163px;
+}
+/*
+typopgraphy
+*/
+body{
+    font-family: var(--body-ff);
+    font-size: var(--body-fz);
+    line-height: var(--line-height);
+    color: var(--title-color);
+}
+.main-tt{
+    font-size:calc(var(--body-fz)*3.25);
+    font-weight: 700;
+    line-height: calc(var(--line-height)*2);
+}
+.sub-tt{
+    font-size:calc(var(--body-fz)*2.625);
+    font-weight: 500;
+}
+.content-tt{
+    font-size:calc(var(--body-fz)*2);
+    font-weight: 400;
+}
+.con-tt{
+    font-size:calc(var(--body-fz)*1.5);
+    font-weight: 400;
+}
+.link{
+    color:var(--primary-c);
+}
+/* color */
+.primary-bg {
+    background: var(--primary-c);
+}
+.secondary-bg {
+    background: var(--secondary-c);
+}
+.primary-color {
+    color: var(--primary-c);
+}
+.secondary-color {
+    color: var(--secondary-c);
+}
+.w-color {
+    color:var(--white);
+}
+.content-bg{
+    background-color: var(--white);
+}
+/* buttons */
+.btn{
+    font-size: calc(var(--body-fz)*1.25);
+    display: inline-block;
+    vertical-align: bottom;
+}
+.primary.btn{
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px;
+}
+.secondary.btn{
+    height: 34px;
+    line-height: 30px;
+    border: 2px solid var(--secondary-c);
+    box-sizing: border-box;
+    padding: 0 20px;
+    transition:0.5s;
+}
+.secondary.btn:hover{
+    background: var(--secondary-c);
+    color: var(--white);
+}
+.btn span{
+    font-size: calc(var(--body-fz)*0.875);
+    position: absolute;
+    bottom: 5px;
+}
+.prev.btn{
+    width: 82px;
+    height: 20px;
+    position: relative;
+    color: var(--title-color);
+    background: url(../img/prev_icon.svg) no-repeat;
+}
+.prev.btn span{
+    right: 5px;
+}
+.next.btn{
+    width: 82px;
+    height: 20px;
+    position: relative;
+    color: var(--title-color);
+    background: url(../img/next_icon.svg) no-repeat;
+}
+.next.btn span{
+    left: 5px;
+}
+.prev.btn:hover{
+    color:var(--primary-c);
+    background-image: url(../img/prev_hover_icon.svg);
+}
+.next.btn:hover{
+    color:var(--primary-c);
+    background-image: url(../img/next_hover_icon.svg);
+}
+.content-mg{
+    margin: 0 var(--magin);
+}
+/* ----------------------LAYOUT--------------------- */
