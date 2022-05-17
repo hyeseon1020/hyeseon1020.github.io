@@ -242,3 +242,13 @@ header nav > ul > li:hover .underline::after{
     padding: 216px 0 0 var(--magin);
     box-sizing: border-box;
 }
+.submenu > li:first-of-type{
+    letter-spacing: 50px;
+    font-weight: 700;
+    font-size: calc(var(--body-fz)*2.625);
+    position: absolute;
+    left: 50px;
+    top: calc(var(--line-height)*2);
+    transform: rotate(90deg) translateY(-100%);;
+    transform-origin: 0 0;
+}
