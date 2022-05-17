@@ -159,11 +159,16 @@ header div .j-betweent a span{
 /* menu */
 #menu{
     position: absolute;
-    right: -200%;
-    transition: 0.4s;
+    right: -100%;
     width: 100%;
-    overflow: hidden;
+    transition: 1.5s;
+    position: fixed;
+    /* visibility: hidden; */
 }
+/* #menu.visible{
+    visibility: visible;
+    
+} */
 /* 클릭시 */
 #menu:target{
     top: 0;
@@ -172,6 +177,9 @@ header div .j-betweent a span{
     right: 0;
     background-color: rgba(0, 0, 0, 0.1);
 }
+/* #menu.visible ul{
+    right: 0;
+} */
 header nav > ul{
     position: absolute;
     top: 0;
@@ -216,62 +224,28 @@ header nav > ul > li:hover .underline::after{
     transform: scale(1);
 }
 /* sub menu */
-#company{
-    position: absolute;
+#company, #product ,#sustainbility ,#recruit{
+    position: fixed;
     right: -100%;
-    transition: 0.4s;
+    transition: 1.5s;
     width: 100%;
-    overflow: hidden;
+    /* visibility: hidden; */
 }
-#company:target{
+/* #company.visible, #product.visible ,#sustainbility.visible ,#recruit.visible{
+    visibility: visible;
+    
+} */
+/* 클릭시 */
+#company:target, #product:target, #sustainbility:target,#recruit:target{
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.1);
 }
-#product{
-    position: absolute;
-    right: -100%;
-    transition: 0.4s;
-    width: 100%;
-    overflow: hidden;
-}
-#product:target{
-    top: 0;
-    bottom: 0;
-    left: 0;
+/* .visible .submenu-bg{
     right: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-#sustainbility{
-    position: absolute;
-    right: -100%;
-    transition: 0.4s;
-    width: 100%;
-    overflow: hidden;
-}
-#sustainbility:target{
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-#recruit{
-    position: absolute;
-    right: -100%;
-    transition: 0.4s;
-    width: 100%;
-    overflow: hidden;
-}
-#recruit:target{
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-}
+} */
 .submenu-bg{
     position: absolute;
     top: 0;
