@@ -265,6 +265,14 @@ header nav > ul > li:hover .underline::after{
     transform: rotate(90deg) translateY(-100%);;
     transform-origin: 0 0;
 }
+#company .submenu{background: url(../img/small-bg1.jpg) no-repeat 0 calc(var(--line-height)*2);
+}
+#product .submenu{background: url(../img/small-bg2.jpg) no-repeat 0 calc(var(--line-height)*2);
+}
+#sustainbility .submenu{background: url(../img/small-bg3.jpg) no-repeat 0 calc(var(--line-height)*2);
+}
+#recruit .submenu{background: url(../img/small-bg4.jpg) no-repeat 0 calc(var(--line-height)*2);
+}
 .submenu{
     padding: 216px 0 0;
     margin: 0 auto;
@@ -273,14 +281,6 @@ header nav > ul > li:hover .underline::after{
     display:flex;
 	flex-wrap:wrap;
     align-content:space-between; 
-}
-#company .submenu{background: url(../img/small-bg1.jpg) no-repeat 0 calc(var(--line-height)*2);
-}
-#product .submenu{background: url(../img/small-bg2.jpg) no-repeat 0 calc(var(--line-height)*2);
-}
-#sustainbility .submenu{background: url(../img/small-bg3.jpg) no-repeat 0 calc(var(--line-height)*2);
-}
-#recruit .submenu{background: url(../img/small-bg4.jpg) no-repeat 0 calc(var(--line-height)*2);
 }
 .submenu > li > p{
     font-weight: 500;
