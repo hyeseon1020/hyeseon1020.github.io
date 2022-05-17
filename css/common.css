@@ -124,6 +124,14 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.menu-bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
 /* --------------------HEADER----------------------- */
 header{
     padding: calc(1rem*3) 0;
@@ -157,40 +165,56 @@ header div .j-betweent a span{
     text-align: center;
 }
 /* menu */
-header nav{
+header nav > ul{
     position: absolute;
     top: 0;
+    right: 0;
     bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-header nav ul{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 100%;
     width: 49.16%;
-    height: 100%;
     background: url(../img/menu-pc.jpg) no-repeat var(--white) 100% 0 / 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 216px 0 0 var(--magin);
 }
- header nav ul li{
-    padding: calc(var(--line-height)*4) 0;
+header nav > ul > li{
+    padding: calc(var(--line-height)*2) 0;
 }
-header nav ul li:first-child{
-    padding: 0 0 calc(var(--line-height)*4);
+header nav > ul > li:first-child{
+    padding: 0 0 calc(var(--line-height)*2);
 }
-header nav ul li:last-child{
-    padding: calc(var(--line-height)*4) 0 0;
+header nav > ul > li:last-child{
+    padding: calc(var(--line-height)*2) 0 0;
+    position: absolute;
+    right: var(--magin);
 }
-header nav ul li:not(:last-of-type) a{
+header nav > ul > li:not(:last-of-type) a{
     font-size: calc(var(--body-fz)*2.626);
     font-weight: 700;
-    /* padding: calc(var(--line-height)*4) 0; */
 }
-header nav > p{
-    padding-top: 50%;
+
+.underline{
+    text-decoration: none;
+    position: relative;
+}
+.underline::after{
+    content: '';
+    position: absolute;
+    transition: 0.4s;
+    top: 100%;
+    left:0;
+    right: 0;
+    border-bottom:2px solid var(--primary-c);
+    transform: scale(0);
+    transform-origin: 0 0;
+}  
+header nav > ul > li:hover .underline::after{
+    transform: scale(1);
+}
+/* sub menu */
+.submenu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 49.16%;
+    background:var(--white);
+    padding: 216px 0 0 var(--magin);
 }
