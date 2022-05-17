@@ -161,7 +161,6 @@ header div .j-betweent a span{
     position: absolute;
     right: -200%;
     transition: 0.4s;
-    max-width: 1920px;
     width: 100%;
     overflow: hidden;
 }
@@ -221,7 +220,6 @@ header nav > ul > li:hover .underline::after{
     position: absolute;
     right: -100%;
     transition: 0.4s;
-    max-width: 1920px;
     width: 100%;
     overflow: hidden;
 }
@@ -232,17 +230,15 @@ header nav > ul > li:hover .underline::after{
     right: 0;
     background-color: rgba(0, 0, 0, 0.1);
 }
-#company .submenu{
+.submenu-bg{
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     width: 49.16%;
-    background: url(../img/small-bg1.jpg) no-repeat var(--white) var(--magin) calc(var(--line-height)*2) / 624px;
-    padding: 216px 0 0 var(--magin);
-    box-sizing: border-box;
+    background: var(--white);
 }
-.submenu > li:first-of-type{
+.submenu-bg > p{
     letter-spacing: 50px;
     font-weight: 700;
     font-size: calc(var(--body-fz)*2.625);
@@ -251,4 +247,35 @@ header nav > ul > li:hover .underline::after{
     top: calc(var(--line-height)*2);
     transform: rotate(90deg) translateY(-100%);;
     transform-origin: 0 0;
+}
+.submenu{
+    background: url(../img/small-bg1.jpg) no-repeat 0 calc(var(--line-height)*2);
+    padding-top: 216px;
+    margin: 0 auto;
+    width: 624px;
+    position: relative;
+}
+.submenu > li> p{
+    font-weight: 500;
+    font-size: calc(var(--body-fz)*2);
+    color: #000;
+    word-spacing: var(--line-height);
+}
+.submenu .submenu-pd{
+    display: flex;
+    padding: var(--line-height) 80px;
+    gap: 15px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.submenu .submenu-pd a{
+    color: #2c2c2c;
+}
+.submenu .submenu-pd li:hover a{
+    color: var(--primary-c);
+}
+.submenu > li:last-of-type{
+    position: absolute;
+    right: 0;
+    padding: calc(var(--line-height)*2) 0 0;
 }
