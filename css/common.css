@@ -124,14 +124,6 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.menu-bg{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-}
 /* --------------------HEADER----------------------- */
 header{
     padding: calc(1rem*3) 0;
@@ -165,6 +157,22 @@ header div .j-betweent a span{
     text-align: center;
 }
 /* menu */
+#menu{
+    position: absolute;
+    right: -200%;
+    transition: 0.4s;
+    max-width: 1920px;
+    width: 100%;
+    overflow: hidden;
+}
+/* 클릭시 */
+#menu:target{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
 header nav > ul{
     position: absolute;
     top: 0;
@@ -173,6 +181,7 @@ header nav > ul{
     width: 49.16%;
     background: url(../img/menu-pc.jpg) no-repeat var(--white) 100% 0 / 300px;
     padding: 216px 0 0 var(--magin);
+    box-sizing: border-box;
 }
 header nav > ul > li{
     padding: calc(var(--line-height)*2) 0;
@@ -189,7 +198,6 @@ header nav > ul > li:not(:last-of-type) a{
     font-size: calc(var(--body-fz)*2.626);
     font-weight: 700;
 }
-
 .underline{
     text-decoration: none;
     position: relative;
@@ -209,12 +217,28 @@ header nav > ul > li:hover .underline::after{
     transform: scale(1);
 }
 /* sub menu */
-.submenu{
+#company{
+    position: absolute;
+    right: -100%;
+    transition: 0.4s;
+    max-width: 1920px;
+    width: 100%;
+    overflow: hidden;
+}
+#company:target{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#company .submenu{
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     width: 49.16%;
-    background:var(--white);
+    background: url(../img/small-bg1.jpg) no-repeat var(--white) var(--magin) calc(var(--line-height)*2) / 624px;
     padding: 216px 0 0 var(--magin);
+    box-sizing: border-box;
 }
