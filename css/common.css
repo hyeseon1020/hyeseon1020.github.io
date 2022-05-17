@@ -230,12 +230,55 @@ header nav > ul > li:hover .underline::after{
     right: 0;
     background-color: rgba(0, 0, 0, 0.1);
 }
+#product{
+    position: absolute;
+    right: -100%;
+    transition: 0.4s;
+    width: 100%;
+    overflow: hidden;
+}
+#product:target{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#sustainbility{
+    position: absolute;
+    right: -100%;
+    transition: 0.4s;
+    width: 100%;
+    overflow: hidden;
+}
+#sustainbility:target{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#recruit{
+    position: absolute;
+    right: -100%;
+    transition: 0.4s;
+    width: 100%;
+    overflow: hidden;
+}
+#recruit:target{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
 .submenu-bg{
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     width: 49.16%;
+    height: 100%;
     background: var(--white);
 }
 .submenu-bg > p{
@@ -249,17 +292,30 @@ header nav > ul > li:hover .underline::after{
     transform-origin: 0 0;
 }
 .submenu{
-    background: url(../img/small-bg1.jpg) no-repeat 0 calc(var(--line-height)*2);
-    padding-top: 216px;
+    padding: 216px 0 0;
     margin: 0 auto;
     width: 624px;
-    position: relative;
+    height: 675px;
+    display:flex;
+	flex-wrap:wrap;
+    align-content:space-between; 
 }
-.submenu > li> p{
+#company .submenu{background: url(../img/small-bg1.jpg) no-repeat 0 calc(var(--line-height)*2);
+}
+#product .submenu{background: url(../img/small-bg2.jpg) no-repeat 0 calc(var(--line-height)*2);
+}
+#sustainbility .submenu{background: url(../img/small-bg3.jpg) no-repeat 0 calc(var(--line-height)*2);
+}
+#recruit .submenu{background: url(../img/small-bg4.jpg) no-repeat 0 calc(var(--line-height)*2);
+}
+.submenu > li > p{
     font-weight: 500;
     font-size: calc(var(--body-fz)*2);
     color: #000;
     word-spacing: var(--line-height);
+}
+.submenu > li{
+    width:100%;
 }
 .submenu .submenu-pd{
     display: flex;
@@ -275,7 +331,11 @@ header nav > ul > li:hover .underline::after{
     color: var(--primary-c);
 }
 .submenu > li:last-of-type{
+    position: relative;
+    padding: calc(var(--line-height)*2) 0 0;
+}
+.submenu > li:last-of-type a{
     position: absolute;
     right: 0;
-    padding: calc(var(--line-height)*2) 0 0;
+    bottom: 0;
 }
