@@ -13,14 +13,14 @@ header{
     height: 100vh;
     padding: calc(var(--line-height)*7) 0 0 var(--margin);
     box-sizing: border-box;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .scroll{
     position: relative;
     height: 100%;
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 59.2%, 77%;
+    background-size: 59.2%;
 }
 .main-bg1{
     background-image: url(../img/slide1-bg.jpg);
@@ -37,7 +37,7 @@ header{
 .container{
     padding-top: calc(var(--line-height)*7);
 }
-/* active */
+/* 클래스명추가 active */
 .container.active .up{
     transform: none;
     opacity: 1;
@@ -45,7 +45,7 @@ header{
 .up{
     transition: 0.5s;
     transform: translateY(50px);
-    /* opacity: 0; */
+    opacity: 0;
 }
 h2{
     color: #000;
@@ -65,14 +65,57 @@ h2{
 /* page */
 .pager{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 300px;
+    left: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.pager a{
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondary-c);
+    display: inline-block;
+    border-radius: 50%;
+    text-indent: -999em;
+}
+.pager .active{
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-c);
 }
 /* scroll down */
 .down{
     position: absolute;
-    top: 50%;
+    bottom: 85px;
     left: 50%;
+    color: #000;
+}
+.scroll-down{
+    margin: 0 auto;
+    width: 30px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: #000;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.ball{
+    margin: 0 auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--white);
+    transform: translateY(0);
+    opacity: 0;
+    animation: down 1s ease-in-out infinite;
+}
+@keyframes down{
+    0%{transform: translateY(0); opacity: 0;}
+    15%{transform: translateY(8px); transform: scaleY(1);}
+    30%{transform: scaleY(1.5);}
+    100%{transform: translateY(30px); opacity: 1;}
 }
 /* ------------------ MORE ---------------- */
 #company1, #product1 ,#sustainbility1 ,#recruit1{

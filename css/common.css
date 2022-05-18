@@ -135,22 +135,34 @@ header div .j-betweent{
     gap:20px;
     padding-top: 3px;
 }
+/* select */
 header select{
     border: none;
     text-transform: uppercase;
     height: var(--line-height);
+    appearance: none;
+    width: 64px;
+    text-align: center;
 }
-header option{text-transform: uppercase;}
+header select:focus{outline: none;}
+header option{
+    text-transform: uppercase;
+}
+header option:focus{
+    color: #a50034;
+
+}
 header .fa-caret-down{
     font-size: var(--line-height);
     text-align: bottom;
-    transform: translateY(1px);
+    transform: translateY(1px) rotateX(0);
     transition: transform 0.5s;
     color: var(--secondary-c);
 }
-header div .j-betweent p.rotate .fa-caret-down{
+header div .fa-caret-down.rotate{
     transform: translateY(5px) rotateX(180deg);
 }
+
 header div .j-betweent a{
     padding-top: 3px;
 }

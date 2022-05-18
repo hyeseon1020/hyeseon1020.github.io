@@ -16,6 +16,10 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css">
+    <!-- <script src="js/modernizr-custom.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/commons.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <header>
@@ -24,9 +28,10 @@
                 <a href="index.html"><img src="img/logo.png" alt="logo"></a>
             </h1>
             <div class="j-betweent">
-                <p class="rotate">
+                
+                <p>
                     <select name="lang" id="lang">
-                        <option value="kor">kor</option>
+                        <option value="kor" selected>kor</option>
                         <option value="eng">eng</option>
                         <option value="chn">chn</option>
                         <option value="ger">ger</option>
@@ -34,6 +39,7 @@
                     </select>
                     <label for="lang"><i class="fa-solid fa-caret-down"></i></label>
                 </p>
+                
                 <a href="#menu">
                     <span class="material-symbols-outlined">menu</span>
                 </a>
@@ -242,7 +248,7 @@
     <main>
         <div class="scroll-wrapper">
             <section class="scroll main-bg1">
-                <div class="container">
+                <div class="container active">
                     <h2 class="main-tt up">회사정보</h2>
                     <p class="up">글로벌 네트워크, 재무정보, IR활동, R&D현황,</p>
                     <p class="up"> 보도자료 등 회사의 각종 정보를 확인하실 수 있습니다.</p>
@@ -280,21 +286,23 @@
                 </div>
             </section>
             <section class="scroll main-bg4">
-                <h2 class="main-tt up">채용정보</h2>
-                <p class="up">채용공고, 직무소개, 인재상, 인사제도 등</p>
-                <p class="up">채용관련 정보를 확인하실 수 있습니다.</p>
-                <span class="up">
-                    <a href="#recruit1" class="con-tt">
-                        Learn more
-                        <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                </span>
+                <div class="container">
+                    <h2 class="main-tt up">채용정보</h2>
+                    <p class="up">채용공고, 직무소개, 인재상, 인사제도 등</p>
+                    <p class="up">채용관련 정보를 확인하실 수 있습니다.</p>
+                    <span class="up">
+                        <a href="#recruit1" class="con-tt">
+                            Learn more
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </span>
+                </div>
             </section>
             <div class="pager">
-                <p><a href="" class="active">1</a></p>
-                <p><a href="">2</a></p>
-                <p><a href="">3</a></p>
-                <p><a href="">4</a></p>
+                <a href="" class="active">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
             </div>
             <div class="down">
                 Scroll Down
