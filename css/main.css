@@ -4,36 +4,36 @@
 /* ------------------ MORE ---------------- */
 #company1, #product1 ,#sustainbility1 ,#recruit1{
     position: fixed;
-    left: -100%;
-    top: 0;
-    bottom: 0;
-    transition: 1.5s;
-    width: 100%;
-    /* visibility: hidden; */
-}
-/* #company.visible, #product.visible ,#sustainbility.visible ,#recruit.visible{
-    visibility: visible;
-    
-} */
-/* 클릭시 */
-#company1:target, #product1:target, #sustainbility1:target,#recruit1:target{
-    top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    visibility: hidden;
+}
+#company1.visible, #product1.visible ,#sustainbility1.visible ,#recruit1.visible{
+    visibility: visible;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.1);
 }
-/* .visible .submenu-bg1{
+/* 클릭시 */
+#company1:target, #product1:target, #sustainbility1:target,#recruit1:target{
     left: 0;
-} */
+}
+.visible .submenu-bg1{
+    left: 0;
+}
 .submenu-bg1{
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100%;
     bottom: 0;
+    right: 0;
     width: 49.16%;
     height: 100%;
     background: var(--white);
+    transition: 0.5s;
 }
 .submenu-bg1 > p{
     letter-spacing: 50px;
