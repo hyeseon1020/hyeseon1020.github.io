@@ -1,9 +1,78 @@
 @import url(common.css);
 
 /* ------------ Scroll Down ---------------------- */
-.scroll-wrapper{height: 100%;}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--white);
+}
+.scroll-wrapper{
+    height: 100vh;
+    padding: calc(var(--line-height)*7) 0 0 var(--margin);
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
 .scroll{
-
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 59.2%, 77%;
+}
+.main-bg1{
+    background-image: url(../img/slide1-bg.jpg);
+}
+.main-bg2{
+    background-image: url(../img/slide2-bg.jpg);
+}
+.main-bg3{
+    background-image: url(../img/slide3-bg.jpg);
+}
+.main-bg4{
+    background-image: url(../img/slide4-bg.jpg);
+}
+.container{
+    padding-top: calc(var(--line-height)*7);
+}
+/* active */
+.container.active .up{
+    transform: none;
+    opacity: 1;
+}
+.up{
+    transition: 0.5s;
+    transform: translateY(50px);
+    /* opacity: 0; */
+}
+h2{
+    color: #000;
+    padding-bottom: calc(var(--line-height)*2);
+}
+.container > p{transition-delay: 0.2s;}
+.scroll span{
+    color: var(--secondary-c);
+    padding-top: calc(var(--line-height)*2);
+    display: block;
+    transition-delay: 0.4s;
+}
+.con-tt{
+    color: var(--secondary-c);
+}
+.scroll .con-tt:hover{color: var(--primary-c);}
+/* page */
+.pager{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+/* scroll down */
+.down{
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 /* ------------------ MORE ---------------- */
 #company1, #product1 ,#sustainbility1 ,#recruit1{
@@ -20,7 +89,7 @@
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.1);
 }
-/* 클릭시 */
+/* 클릭시 visible */
 .visible .submenu-bg1{
     left: 0;
 }
