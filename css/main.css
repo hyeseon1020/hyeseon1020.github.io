@@ -1,6 +1,10 @@
 @import url(common.css);
 
+/* ------------ Scroll Down ---------------------- */
+.scroll-wrapper{height: 100%;}
+.scroll{
 
+}
 /* ------------------ MORE ---------------- */
 #company1, #product1 ,#sustainbility1 ,#recruit1{
     position: fixed;
@@ -8,19 +12,15 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.0);
     transition: 0.5s;
     visibility: hidden;
 }
 #company1.visible, #product1.visible ,#sustainbility1.visible ,#recruit1.visible{
     visibility: visible;
-    left: 0;
     background-color: rgba(0, 0, 0, 0.1);
 }
 /* 클릭시 */
-#company1:target, #product1:target, #sustainbility1:target,#recruit1:target{
-    left: 0;
-}
 .visible .submenu-bg1{
     left: 0;
 }
