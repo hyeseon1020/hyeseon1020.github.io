@@ -130,6 +130,8 @@ body{
 header{
     padding: calc(1rem*3) 0;
     box-shadow: 0px 1px var(--primary-c);
+    position: relative;
+    z-index: 1;
 }
 header div .j-betweent{
     gap:20px;
