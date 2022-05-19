@@ -1,13 +1,21 @@
 $(function(){
     //select
-    let label = $('label'),
-        select = $('select');
-    label.click(function(){
-        $(this).toggleClass('rotate');
-        select.trigger('click');
+    let btn = $('.label'),
+        rotate = $('.box .fa-caret-down'),
+        option = $('.box .option');
+    btn.click(()=>{
+        $('.box').toggleClass('rotate');
+    });
+    rotate.click(()=>{
+        $('.box').toggleClass('rotate');
+    });
+    option.click(function(){
+        let otn = $(this).html();
+        btn.html(otn);
+        $('.box').toggleClass('rotate');
     });
     // menu
-    let menuBtn = $('header div .j-betweent a:nth-of-type(1)'),
+    let menuBtn = $('.menu'),
         menuWrap = $('#menu_wrapper'),
         menu = $('#menu'),
         menuItem = menu.find('li');

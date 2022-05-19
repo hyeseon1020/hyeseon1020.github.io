@@ -135,31 +135,45 @@ header div .j-betweent{
     gap:20px;
     padding-top: 3px;
 }
-/* select */
-header select{
-    border: none;
-    text-transform: uppercase;
+/* lang */
+.box{
+    position: relative;
+}
+.label{
+    text-transform: uppercase; 
     height: var(--line-height);
-    appearance: none;
-    width: 64px;
-    text-align: center;
+    cursor: pointer;
 }
-header select:focus{outline: none;}
-header option{
+.optionList{
     text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-25px) translateX(-50%);
+    border: 1px solid var(--white);
+    width: 54px;
+    text-align: center;
+    background-color: var(--white);
+    padding: 10px 0;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.4s;
+    cursor: pointer;
 }
-#lang option:hover{
+.option:hover a{
     color: #a50034;
-    background-color: #fff;
+}
+.box.rotate .optionList{ 
+    transform: translateY(0) translateX(-50%); 
+    opacity: 1;
 }
 header .fa-caret-down{
     font-size: var(--line-height);
-    text-align: bottom;
     transform: translateY(1px) rotateX(0);
     transition: transform 0.5s;
     color: var(--secondary-c);
+    cursor: pointer;
 }
-header label.rotate .fa-caret-down{
+.box.rotate .fa-caret-down{
     transform: translateY(5px) rotateX(180deg);
 }
 

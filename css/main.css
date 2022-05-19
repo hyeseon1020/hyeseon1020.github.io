@@ -22,16 +22,16 @@ header{
     background-position: right top;
     background-size: 59.2%;
 }
-.main-bg1{
+#main-bg1{
     background-image: url(../img/slide1-bg.jpg);
 }
-.main-bg2{
+#main-bg2{
     background-image: url(../img/slide2-bg.jpg);
 }
-.main-bg3{
+#main-bg3{
     background-image: url(../img/slide3-bg.jpg);
 }
-.main-bg4{
+#main-bg4{
     background-image: url(../img/slide4-bg.jpg);
 }
 .container{
@@ -64,7 +64,7 @@ h2{
 .scroll .con-tt:hover{color: var(--primary-c);}
 /* page */
 .pager{
-    position: absolute;
+    position: fixed;
     top: 300px;
     left: 43%;
     display: flex;
@@ -80,14 +80,14 @@ h2{
     border-radius: 50%;
     text-indent: -999em;
 }
-.pager .active{
+.pager .on{
     width: 20px;
     height: 20px;
     background-color: var(--primary-c);
 }
 /* scroll down */
 .down{
-    position: absolute;
+    position: fixed;
     bottom: 85px;
     left: 50%;
     color: #000;
@@ -127,6 +127,7 @@ h2{
     background-color: rgba(0, 0, 0, 0.0);
     transition: 0.5s;
     visibility: hidden;
+    z-index: 2;
 }
 #company1.visible, #product1.visible ,#sustainbility1.visible ,#recruit1.visible{
     visibility: visible;

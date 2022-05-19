@@ -28,19 +28,19 @@
                 <a href="index.html"><img src="img/logo.png" alt="logo"></a>
             </h1>
             <div class="j-betweent">
+                <div class="box">
+                    <button class="label">kor</button>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <ul class="optionList">
+                        <li class="option"><a href="#">kor</a></li>
+                        <li class="option"><a href="#">eng</a></li>
+                        <li class="option"><a href="#">chn</a></li>
+                        <li class="option"><a href="#">ger</a></li>
+                        <li class="option"><a href="#">jpn</a></li>
+                    </ul>
+                </div>
                 
-                <p>
-                    <select name="lang" id="lang">
-                        <option value="kor" selected>kor</option>
-                        <option value="eng">eng</option>
-                        <option value="chn">chn</option>
-                        <option value="ger">ger</option>
-                        <option value="jpn">jpn</option>
-                    </select>
-                    <label for="lang"><i class="fa-solid fa-caret-down"></i></label>
-                </p>
-                
-                <a href="#menu">
+                <a href="#menu" class="menu">
                     <span class="material-symbols-outlined">menu</span>
                 </a>
                 <a href="search.html">
@@ -247,7 +247,7 @@
     </header>
     <main>
         <div class="scroll-wrapper">
-            <section class="scroll main-bg1">
+            <section class="scroll" id="main-bg1">
                 <div class="container active">
                     <h2 class="main-tt up">회사정보</h2>
                     <p class="up">글로벌 네트워크, 재무정보, IR활동, R&D현황,</p>
@@ -260,7 +260,7 @@
                     </span>
                 </div>
             </section>
-            <section class="scroll main-bg2">
+            <section class="scroll" id="main-bg2">
                 <div class="container">
                     <h2 class="main-tt up">제품정보</h2>
                     <p class="up">석유화학, 첨단소재, 생명과학 제품정보를 확인하실 수 있습니다.</p>
@@ -272,7 +272,7 @@
                     </span>
                 </div>
             </section>
-            <section class="scroll main-bg3">
+            <section class="scroll" id="main-bg3">
                 <div class="container">
                     <h2 class="main-tt up">지속가능경영</h2>
                     <p class="up">기후변화대응, 순환경제, 책임있는 공급망 관리 등</p>
@@ -285,7 +285,7 @@
                     </span>
                 </div>
             </section>
-            <section class="scroll main-bg4">
+            <section class="scroll" id="main-bg4">
                 <div class="container">
                     <h2 class="main-tt up">채용정보</h2>
                     <p class="up">채용공고, 직무소개, 인재상, 인사제도 등</p>
@@ -299,10 +299,10 @@
                 </div>
             </section>
             <div class="pager">
-                <a href="" class="active">1</a>
-                <a href="">2</a>
-                <a href="">3</a>
-                <a href="">4</a>
+                <a href="#main-bg1" class="on">1</a>
+                <a href="#main-bg2">2</a>
+                <a href="#main-bg3">3</a>
+                <a href="#main-bg4">4</a>
             </div>
             <div class="down">
                 Scroll Down
