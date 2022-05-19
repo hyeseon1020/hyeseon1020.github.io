@@ -150,7 +150,7 @@ header option{
 }
 #lang option:hover{
     color: #a50034;
-
+    background-color: #fff;
 }
 header .fa-caret-down{
     font-size: var(--line-height);

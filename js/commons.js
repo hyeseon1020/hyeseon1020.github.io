@@ -4,6 +4,7 @@ $(function(){
         select = $('select');
     label.click(function(){
         $(this).toggleClass('rotate');
+        select.trigger('click');
     });
     // menu
     let menuBtn = $('header div .j-betweent a:nth-of-type(1)'),
