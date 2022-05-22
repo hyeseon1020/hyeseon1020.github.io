@@ -57,8 +57,3 @@ button{
 	background: none;
 	border: none;
 }
-.cf::after{
-	content: '';
-    display: block;
-    clear: both;
-}

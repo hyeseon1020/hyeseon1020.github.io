@@ -412,3 +412,50 @@ h2:hover .underline::after{
 .quickly a:hover{
     color: var(--primary-c);
 }
+
+/* -------------------- FOOTER -------------------- */
+footer{
+    width: 100%;
+    background-color: #2f2f2f;
+    padding: var(--line-height) 0;
+}
+footer p{
+    color: var(--secondary-c);
+    font-size: 14px;
+}
+footer a{
+    color: var(--white);
+}
+footer .content-mg{
+    display: flex;
+    justify-content: space-between;
+}
+footer .content-mg > div{
+    display: flex;
+    flex-direction: column;
+    gap: var(--line-height);
+}
+.footer_menu, .footer_contents{
+    display: flex;
+    gap: 30px;
+}
+.footer_menu a:hover{
+    color: var(--primary-c);
+}
+.link{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--line-height);
+}
+.link .btn{
+    font-size: var(--body-fz);
+    padding-left: 25px;
+}
+.link .sns{
+    display: flex;
+    justify-content: space-between;
+}
+.sns a:hover{
+    color: var(--primary-c);
+}

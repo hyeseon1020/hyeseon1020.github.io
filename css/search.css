@@ -1,2 +1,78 @@
 @import url(common.css);
 
+/* search */
+main .search{
+    background-color: #ededed;
+    padding: calc(var(--line-height)*2);
+}
+main form{
+    width: 620px;
+    height: 60px;
+    margin: 0 auto;
+}
+main input{
+    width: 562px;
+    height: calc(var(--line-height)*2);
+}
+main input::placeholder{
+    font-size: 24px;
+}
+main .search button a{
+    width: 39px;
+    height: 39px;
+    background-size: 100% 100%;
+}
+/* search tab */
+.tab-wrapper{
+    width: 1280px;
+    margin: 0 auto;
+    padding: calc(var(--line-height)*3) 0;
+}
+.tab-wrapper > section{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: calc(var(--line-height)*3);
+}
+.tab-menu{
+    display: flex;
+    gap: 20px;
+}
+.tab-menu a{
+    text-transform: uppercase;
+}
+/* 클래스명 target */
+.tab-menu a.target{
+    color: var(--primary-c);
+}
+.tab-wrapper section p{
+    font-size: 20px;
+}
+.tab-wrapper b{
+    color: var(--primary-c);
+}
+/* tab-result */
+.tab-wrapper .tab-result{
+    width: 100%;
+}
+.tab-wrapper #a-1, .tab-wrapper #a-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.tab-result .tab-content{
+    padding-bottom: calc(var(--line-height)*4);
+}
+.tab-result section{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.tab-result section::before, .tab-result section::after{
+    content: '–';
+}
+.tab-result section a{
+    color: var(--title-color);
+}
+.tab-result section a:hover{
+    color: var(--primary-c);
+}
