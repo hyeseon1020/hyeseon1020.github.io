@@ -36,6 +36,7 @@ header{
 }
 .container{
     padding-top: calc(var(--line-height)*7);
+    width: 460px;
 }
 /* 클래스명추가 active */
 .container.active .up{

@@ -38,5 +38,11 @@ $(function(){
             $(targetId).removeClass('visible');
         });
     });
-
+    //search
+    let searchBtn = $('.search-btn'),
+        search = $('.search');
+    searchBtn.click((e)=>{
+        e.preventDefault();
+        search.toggleClass('hidden');
+    });
 });//script

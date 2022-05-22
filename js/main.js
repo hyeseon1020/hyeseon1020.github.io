@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    let section = $('section');
+    let section = $('.scroll-wrapper section');
     let more = section.find('span');
     let pager = $('.pager a');
 
