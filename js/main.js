@@ -28,9 +28,9 @@ $(document).ready(function(){
           });
     });
 
-    more.click(function(e){
+    more.find('a').click(function(e){
         e.preventDefault();
-        let targetId = $(this).find('a').attr('href');
+        let targetId = $(this).attr('href');
         $(targetId).addClass('visible');
         $(targetId).find('.close').click((e)=>{
             e.preventDefault();
