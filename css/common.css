@@ -155,14 +155,19 @@ header div .j-betweent{
     width: 54px;
     text-align: center;
     background-color: var(--white);
-    padding: 10px 0;
     z-index: -1;
     opacity: 0;
     transition: 0.4s;
     cursor: pointer;
 }
+.option a{
+    display: inline-block;
+    color: #6b6b6b;
+    width: 100%;
+}
 .option:hover a{
-    color: #a50034;
+    color: var(--primary-c);
+    background-color: #ebebeb;
 }
 .box.rotate .optionList{ 
     transform: translateY(0) translateX(-50%); 
@@ -245,7 +250,7 @@ header div .j-betweent a span{
     transform: scale(0);
     transform-origin: 0 0;
 }  
-header nav > ul > li:hover .underline::after{
+header nav li:hover .underline::after{
     transform: scale(1);
 }
 /* sub menu */
@@ -318,6 +323,10 @@ header nav > ul > li:hover .underline::after{
 }
 .submenu .submenu-pd li:hover a{
     color: var(--primary-c);
+}
+.submenu .submenu-pd li:hover .underline::after{
+    transform-origin: 50% 50%;
+    transform: scale(1);
 }
 .submenu > li:last-of-type{
     position: relative;
