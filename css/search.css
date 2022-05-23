@@ -54,12 +54,8 @@ main .search button a{
 .tab-wrapper .tab-result{
     width: 100%;
 }
-.tab-wrapper #a-1, .tab-wrapper #a-2{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-.tab-result .tab-content{
+.tab-result > div {display: none;}
+.tab-result .content{
     padding-bottom: calc(var(--line-height)*4);
 }
 .tab-result section{
@@ -75,4 +71,10 @@ main .search button a{
 }
 .tab-result section a:hover{
     color: var(--primary-c);
+}
+/* target 받은 요소 display : flex로 변경 */
+.tab-result #a-1, .tab-result #a-2, .tab-result #b-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
