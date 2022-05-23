@@ -73,7 +73,7 @@ main .search button a{
     color: var(--primary-c);
 }
 /* target 받은 요소 display : flex로 변경 */
-.tab-result #a-1, .tab-result #a-2, .tab-result #b-1{
+.tab-result #a-1, .tab-result #a-2, .tab-result #b-1, .tab-result #c-1{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
