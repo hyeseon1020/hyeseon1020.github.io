@@ -1,19 +1,22 @@
 @import url(common.css);
-
-main section{
-    width: 100%;
-    padding: calc(var(--line-height)*6) var(--margin);
-    box-sizing: border-box;
+main{
+    margin: calc(var(--line-height)*6) var(--margin);
+    display: flex;
+    align-content: space-between;
+    gap: calc(var(--line-height)*19);
+    flex-direction: column;
 }
 .main{
     padding-left: 0;
     display: flex;
     justify-content: space-between;
+    align-items: end;
 }
 .anode{
     width: 1191px;
     height: 584px;
     background: url(../img/anode.png) no-repeat 0 0 / 100%;
+    transform: translateX(-163px);
 }
 .anode h2{
     padding: 0 0 var(--line-height) 473px ;
@@ -230,6 +233,10 @@ span.bad-input{
 }
 
 /* -------- main  ------- */
+main section .right-con{
+    display: flex;
+    justify-content: flex-end;
+}
 .content h3{
     padding-bottom: var(--line-height);
 }
@@ -252,6 +259,50 @@ section .car > div{
     gap: 210px;
     text-align: center;
 }
-.purepose p{
+.purepose img{
+    padding: calc(var(--line-height)*2) var(--line-height);
+
+}
+.function{
+    width: 850px;
+    height: 488px;
+    background: url(../img/1_Cathode_kor.png) no-repeat 0 0 /100%;
+    text-align: end;
+    position: relative;
+}
+.function > div{
+    width: 570px;
+    position: absolute;
+    right: 0;
+    top: -70px;
+}
+.cpt{
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+.cpt p{
+    padding: var(--line-height) 0;
+}
+
+.content .more{
+    text-align: end;
+    position: relative;
+    height: 835px;
+}
+.content .more .anode-img{
+    display: block;
+    overflow: hidden;
+}
+.content .more > div{
+    width: 760px;
+    position: absolute;
+    right: 0;
     padding-top: var(--line-height);
+}
+.content .more:hover img{
+    transform: scale(1.2);
+}
+.content .more:hover .sub-tt a{
+    color: var(--primary-c);
 }
