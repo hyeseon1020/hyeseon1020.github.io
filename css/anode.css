@@ -230,10 +230,6 @@ span.bad-input{
 }
 
 /* -------- main  ------- */
-main .rigth{
-    width: 100%;
-    padding-left: 905px;
-}
 .content h3{
     padding-bottom: var(--line-height);
 }
@@ -248,10 +244,14 @@ section .car > div{
     position: absolute;
     right: 0;
     top: -45px;
+    text-align: right;
 }
-section .car h3{
-    float: right;
+.purepose{
+    display: flex;
+    justify-content: center;
+    gap: 210px;
+    text-align: center;
 }
-section .car p{
-    float: right;
+.purepose p{
+    padding-top: var(--line-height);
 }
