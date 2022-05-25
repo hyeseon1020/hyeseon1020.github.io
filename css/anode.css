@@ -34,6 +34,7 @@ main section{
     bottom: 15px;
 }
 /* ----- form ----- */
+/* 클릭시 hidden 제거 */
 #query{
     position: fixed;
     top: 0;
@@ -58,6 +59,7 @@ main section{
     top: calc(var(--line-height)*2);
     right: 100px;
     font-size: 20px;
+    cursor: pointer;
 }
 .form-pd{
     padding-bottom: calc(var(--line-height)*2);
@@ -73,6 +75,7 @@ main section{
 .check-box label{
     position: relative;
     padding-left: 15px;
+    cursor: pointer;
 }
 .check-box label::before{
     content: '';
@@ -91,6 +94,7 @@ label.check::before{
     border-color: #a50034;
 }
 /* select */
+/* .select클릭시 rotate 추가 */
 .select{
     position: relative;
     display: flex;
@@ -98,11 +102,13 @@ label.check::before{
 }
 .select .label{
     border-bottom: 1px solid var(--secondary-c);
+    padding: 0 5px 8px;
+    box-sizing: border-box;
 }
 .select .optionList{
     position: absolute;
     left: 170px;
-    bottom: -60px;
+    bottom: -20px;
     border: 1px solid var(--white);
     background-color: var(--white);
     width: 80px;
@@ -125,6 +131,7 @@ label.check::before{
     color: var(--primary-c);
     background-color: #ebebeb;
 }
+/* i클릭시 .select.rotate 추가 */
 .select i{
     font-size: 20px;
     padding-left: 5px;
@@ -180,4 +187,71 @@ textarea{
 }
 textarea:focus{
     outline: none;
+}
+.email-form{
+    display: flex;
+    gap: 90px;
+}
+.email-form input{
+    border: none;
+    color: #2c2c2c;
+    text-align: center;
+    background-color: transparent;
+    border-bottom: 2px solid var(--secondary-c);
+    width: 50%;
+    box-sizing: border-box;
+}
+.email-form input:focus{
+    outline: none;
+    border-bottom-color: var(--primary-c);;
+}
+.send-form{
+    display: flex;
+    justify-content: center;
+}
+.send-form button{
+    cursor: pointer;
+}
+/* required */
+span.bad-input{
+    border-radius: 5px;
+    padding: 3px 10px;
+    color: red;
+    position: absolute;
+    white-space: nowrap;
+    transform: translateY(100%);
+    margin-left: 200px;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+@keyframes fadeIn{
+    0%{margin-left: 200px; opacity: 0;}
+    100%{margin-left: 155px; opacity: 1;}
+}
+
+/* -------- main  ------- */
+main .rigth{
+    width: 100%;
+    padding-left: 905px;
+}
+.content h3{
+    padding-bottom: var(--line-height);
+}
+section .car{
+    width: 822px;
+    height: 528px;
+    background: url(../img/car2.png) no-repeat 0 0 / 100%;
+    position: relative;
+}
+section .car > div{
+    width: 625px;
+    position: absolute;
+    right: 0;
+    top: -45px;
+}
+section .car h3{
+    float: right;
+}
+section .car p{
+    float: right;
 }
