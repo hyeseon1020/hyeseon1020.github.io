@@ -1,0 +1,183 @@
+@import url(common.css);
+
+main section{
+    width: 100%;
+    padding: calc(var(--line-height)*6) var(--margin);
+    box-sizing: border-box;
+}
+.main{
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.anode{
+    width: 1191px;
+    height: 584px;
+    background: url(../img/anode.png) no-repeat 0 0 / 100%;
+}
+.anode h2{
+    padding: 0 0 var(--line-height) 473px ;
+}
+.anode p{
+    padding: 0 0 var(--line-height) 589px ;
+}
+.main .query-nav{
+    padding-top: 543px;
+}
+.query-nav .next.btn{
+    width: 212px;
+    height: 43px;
+    background-size: 100%;
+}
+.main .query-nav span{
+    font-size: 24px;
+    bottom: 15px;
+}
+/* ----- form ----- */
+#query{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+#query form{
+    width: 49%;
+    height: 100%;
+    background: var(--white);
+    margin: 0 auto;
+    padding: calc(var(--line-height)*3) var(--margin);
+    position: relative;
+}
+#query form > h3{font-weight: 700;}
+#query form > h4, #query form .con-tt{font-weight: 500;}
+#query form > i{
+    position: absolute;
+    top: calc(var(--line-height)*2);
+    right: 100px;
+    font-size: 20px;
+}
+.form-pd{
+    padding-bottom: calc(var(--line-height)*2);
+}
+.checkbox{
+    display: flex;
+    gap: 90px;
+}
+.check-box{
+    display: flex;
+    gap: 25px;
+}
+.check-box label{
+    position: relative;
+    padding-left: 15px;
+}
+.check-box label::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 2px solid var(--secondary-c);
+}
+/* label 클릭시 class명 check 추가 */
+label.check::before{
+    background: #a50034;
+    border-color: #a50034;
+}
+/* select */
+.select{
+    position: relative;
+    display: flex;
+    gap: 70px;
+}
+.select .label{
+    border-bottom: 1px solid var(--secondary-c);
+}
+.select .optionList{
+    position: absolute;
+    left: 170px;
+    bottom: -60px;
+    border: 1px solid var(--white);
+    background-color: var(--white);
+    width: 80px;
+    text-align: center;
+    transition: 0.4s;
+    cursor: pointer;
+    opacity: 0;
+    box-sizing: border-box;
+    transform: translateY(50px);
+}
+.select.rotate .optionList{
+    transform: translateY(0);
+    opacity: 1;
+}
+.select .optionList li{
+    padding: 5px;
+    color: var(--title-color);
+}
+.option:hover{
+    color: var(--primary-c);
+    background-color: #ebebeb;
+}
+.select i{
+    font-size: 20px;
+    padding-left: 5px;
+    transform: translateY(0px) rotateX(0deg);
+    transition: 0.4s;
+    color: var(--secondary-c);
+    cursor: pointer;
+}
+.select.rotate i{
+    transform: translateY(2px) rotateX(180deg);
+}
+/* 제품명 */
+.product-title{
+    display: flex;
+    gap: 90px;
+}
+.product-title a{
+    height: var(--line-height);
+    box-sizing: border-box;
+}
+/* 제목 */
+.title{
+    display: flex;
+    gap: 125px;
+}
+.title input{
+    border: none;
+    color: #2c2c2c;
+    text-align: center;
+    background-color: transparent;
+    border-bottom: 2px solid var(--secondary-c);
+    width: 60%;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.title input:focus{
+    outline: none;
+    border-bottom-color:var(--primary-c);
+}
+/* 문의내용 */
+.query-con{
+    display: flex;
+    gap: 80px;
+}
+textarea{
+    width: 74%;
+    height: 214px;
+    background: #f2f2f2;
+    color: var(--title-color);
+    padding: 10px;
+    resize: none;
+    box-sizing: border-box;
+}
+textarea:focus{
+    outline: none;
+}

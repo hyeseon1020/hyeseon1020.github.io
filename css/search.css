@@ -5,12 +5,12 @@ main .search{
     background-color: #ededed;
     padding: calc(var(--line-height)*2);
 }
-main form{
+main .search form{
     width: 620px;
     height: 60px;
     margin: 0 auto;
 }
-main input{
+main .search input{
     width: 562px;
     height: calc(var(--line-height)*2);
 }
@@ -47,9 +47,6 @@ main .search button a{
 .tab-wrapper section p{
     font-size: 20px;
 }
-.tab-wrapper b{
-    color: var(--primary-c);
-}
 /* tab-result */
 .tab-wrapper .tab-result{
     width: 100%;
@@ -58,12 +55,12 @@ main .search button a{
 .tab-result .content{
     padding-bottom: calc(var(--line-height)*4);
 }
-.tab-result section{
+.tab-result ul{
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-.tab-result section::before, .tab-result section::after{
+.tab-result ul::before, .tab-result ul::after{
     content: '–';
 }
 .tab-result section a{
@@ -73,8 +70,13 @@ main .search button a{
     color: var(--primary-c);
 }
 /* target 받은 요소 display : flex로 변경 */
-.tab-result #a-1, .tab-result #a-2, .tab-result #b-1, .tab-result #c-1{
+.tab-result #a-1, .tab-result #b-1, .tab-result #c-1, .tab-result #e-1, .tab-result #f-1, .tab-result #h-1, .tab-result #i-1, .tab-result #k-1, .tab-result #l-1, .tab-result #m-1, .tab-result #n-1, .tab-result #o-1, .tab-result #s-1, .tab-result #t-1{
     display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.tab-result #a-2, .tab-result #l-2{
+    display: none;
     flex-wrap: wrap;
     gap: 24px;
 }

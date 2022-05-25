@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/anode.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/commons.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/anode.js"></script>
 </head>
 <body>
     <header>
@@ -51,7 +51,7 @@
             <nav id="menu">
                 <ul>
                     <li><a href="#company" class="underline sub-tt">COMPANY</a>
-    
+                        
                     </li>
                     <li><a href="#product" class="underline sub-tt">PRODUCT</a>
     
@@ -288,244 +288,161 @@
         </section>
     </header>
     <main>
-        <div class="scroll-wrapper">
-            <section class="scroll" id="main-bg1">
-                <div class="container">
-                    <h2 class="main-tt up">회사정보</h2>
-                    <p class="up">글로벌 네트워크, 재무정보, IR활동, R&D현황,</p>
-                    <p class="up"> 보도자료 등 회사의 각종 정보를 확인하실 수 있습니다.</p>
-                    <span class="up">
-                        <a href="#company1" class="con-tt">
-                            Learn more
-                            <i class="fa-solid fa-angle-right"></i>
-                        </a>
-                    </span>
+        <section class="left main">
+            <div class="anode">
+                <h2 class="main-tt">양극재</h2>
+                <p class="content-tt">Cathode Material</p>
+            </div>
+            <div class="query-nav">
+                <a href="#query" class="next btn">
+                    <span>제품문의</span>
+                </a>
+            </div>
+            <div id="query">
+                <form action="" method="post" novalidate id="queryForm">
+                    <h3 class="content-tt form-pd">제품문의</h3>
+                    <i class="fa-solid fa-x"></i>
+                    <div class="form-pd checkbox">
+                        <span class="con-tt">문의유형<em>&#42;</em></span>
+                        <div class="check-box">
+                            <p>
+                                <input type="radio" id="buy" name="type" value="제품구매" class="hidden">
+                                <label for="buy" class="tt">제품구매</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="data" name="type" value="제품자료" class="hidden">
+                                <label for="data" class="tt">제품자료</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="proposal" name="type" value="협력제안" class="hidden">
+                                <label for="proposal" class="tt">협력제안</label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="select form-pd">
+                        <span class="con-tt">사업구분<em>&#42;</em></span>
+                        <div>
+                            <button class="label" class="tt">사업구분
+                                <i class="fa-solid fa-caret-down"></i>
+                            </button>
+                            <ul class="optionList">
+                                <li class="option" class="tt">석유화학</li>
+                                <li class="option" class="tt">첨단소재</li>
+                                <li class="option" class="tt">생명과학</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="product-title form-pd">
+                        <span class="con-tt">제품명<em>&#42;</em></span>
+                        <a href="#" class="secondary btn secondary-color">제품검색</a>
+                    </p>
+                    <p class="title form-pd">
+                        <label for="title" class="con-tt">제목</label>
+                        <input type="text" name="title" id="title">
+                    </p>
+                    <p class="query-con form-pd">
+                        <label for="content" class="con-tt">문의내용</label>
+                        <textarea name="content" name="content" id="content" placeholder="문의합니다"></textarea>
+                    </p>
+                    <h4 class="content-tt form-pd">문의자 정보</h4>
+                    <p class="email-form form-pd form-pd">
+                        <label for="email" class="con-tt">이메일<em>&#42;</em></label>
+                        <input type="email" list="email" name="email" class="email"  placeholder="@">
+                        <datalist id="email">
+                            <option value="@gmail.com">@gmail.com</option>
+                            <option value="@naver.com">@naver.com</option>
+                            <option value="@daum.net">@daum.net</option>
+                        </datalist>
+                    </p>
+                    <button class="primary primary-bg btn w-color">문의하기</button>
+                </form>
+            </div>
+        </section>
+        <section class="rigth">
+            <div class="content car">
+                <h3 class="sub-tt">세계적인 전지 기술경쟁력의 핵심</h3>
+                <p class="tt">양극재는 리튬이온배터리의 에너지원으로 전지의 성능, 안전성 및 가격 등에 가장 큰 영향을 미치는 핵심소재입니다. LG화학은 원재료부터 완제품까지 생산하며 우수한 배터리 기술경쟁력을 갖추고 있습니다.</p>
+            </div>
+        </section>
+        <section class="left">
+            <div class="content">
+                <h3 class="sub-tt">제품용도</h3>
+                <div class="purepose">
+                    <div>
+                        <img src="img/1_anode_kor.png" alt="소형전지">
+                        <p class="content-tt">소형전지</p>
+                    </div>
+                    <div>
+                        <img src="img/2_anode_kor.png" alt="자동차 전지">
+                        <p class="content-tt">자동차 전지</p>
+                    </div>
+                    <div>
+                        <img src="img/3_anode_kor.png" alt="ESS 전지">
+                        <p class="content-tt">ESS 전지</p>
+                    </div>
                 </div>
-            </section>
-            <section class="scroll" id="main-bg2">
-                <div class="container">
-                    <h2 class="main-tt up">제품정보</h2>
-                    <p class="up">석유화학, 첨단소재, 생명과학 제품정보를 확인하실 수 있습니다.</p>
-                    <span class="up">
-                        <a href="#product1" class="con-tt">
-                            Learn more
-                            <i class="fa-solid fa-angle-right"></i>
-                        </a>
-                    </span>
-                </div>
-            </section>
-            <section class="scroll" id="main-bg3">
-                <div class="container">
-                    <h2 class="main-tt up">지속가능경영</h2>
-                    <p class="up">기후변화대응, 순환경제, 책임있는 공급망 관리 등</p>
-                    <p class="up">지속가능경영을 위한 LG화학의 노력을 확인하실 수 있습니다.</p>
-                    <span class="up">
-                        <a href="#sustainbility1" class="con-tt">
-                            Learn more
-                            <i class="fa-solid fa-angle-right"></i>
-                        </a>
-                    </span>
-                </div>
-            </section>
-            <section class="scroll" id="main-bg4">
-                <div class="container">
-                    <h2 class="main-tt up">채용정보</h2>
-                    <p class="up">채용공고, 직무소개, 인재상, 인사제도 등</p>
-                    <p class="up">채용관련 정보를 확인하실 수 있습니다.</p>
-                    <span class="up">
-                        <a href="#recruit1" class="con-tt">
-                            Learn more
-                            <i class="fa-solid fa-angle-right"></i>
-                        </a>
-                    </span>
-                </div>
-            </section>
-            <div class="pager">
-                <a href="#main-bg1" class="on">1</a>
-                <a href="#main-bg2">2</a>
-                <a href="#main-bg3">3</a>
-                <a href="#main-bg4">4</a>
             </div>
-            <div class="down">
-                Scroll Down
-                <div class="scroll-down">
-                    <div class="ball"></div>
+        </section>
+        <section class="rigth">
+            <div class="content function">
+                <h3 class="sub-tt">제품 기능 및 구조</h3>
+                <p class="tt">양극재는 리튬이온전지의 에너지원으로 전이금속이 산화/환원되면서 리튬이온과 전자를 방출/흡입하며, 전지는 이와 같은 금속의 반응성 차이를 이용하여 화학에너지를 전기에너지로 바꾸어 사용합니다.</p>
+            </div>
+        </section>
+        <section class="left">
+            <div class="content">
+                <h3 class="sub-tt">경쟁력</h3>
+                <div class="cpt">
+                    <div>
+                        <p>&ndash; 전구체 설계/합성 기술</p>
+                        <img src="img/cathode1.png" alt="소형전지">
+                    </div>
+                    <div>
+                        <p>&ndash; 양극재 소성기술</p>
+                        <img src="img/cathode2.png" alt="자동차 전지">
+                    </div>
+                    <div>
+                        <p>&ndash; 도핑/ 코팅 기술</p>
+                        <img src="img/cathode3.png" alt="ESS 전지">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="company1">
-            <div class="submenu-bg1">
-                <p class="sub-tt">COMPANY</p>
-                <ul class="submenu">
-                    <li><P class="content-tt" class="content-tt">01 기업정보</P>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">회사소개</a></li>
-                            <li><a href="" class="underline">LG Way</a></li>
-                            <li><a href="" class="underline">CI</a></li>
-                            <li><a href="" class="underline">비전</a></li>
-                            <li><a href="" class="underline">브랜드</a></li>
-                            <li><a href="" class="underline">아이덴티티</a></li>
-                            <li><a href="" class="underline">사업영역</a></li>
-                            <li><a href="" class="underline">글로벌 네트워크</a></li>
-                            <li><a href="" class="underline">연혁</a></li>
-                        </ul>
-                    </li>
-                    <li><P class="content-tt">02 투자정보</P>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">경영정보</a></li>
-                            <li><a href="" class="underline">재무정보</a></li>
-                            <li><a href="" class="underline">주식정보</a></li>
-                            <li><a href="" class="underline">공시정보</a></li>
-                            <li><a href="" class="underline">IR활동</a></li>
-                            <li><a href="" class="underline">IR자료실</a></li>
-                        </ul>
-                    </li>
-                    <li><p class="content-tt">03 사회공헌</p>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">비전 및 전략과제</a></li>
-                            <li><a href="" class="underline">운영 현황</a></li>
-                        </ul>
-                    </li>
-                    <li><p class="content-tt">04 R&D</p>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">R&D 현황</a></li>
-                            <li><a href="" class="underline">R&D 분야</a></li>
-                            <li><a href="" class="underline">R&D 실적</a></li>
-                        </ul>
-                    </li>
-                    <li><p class="content-tt">05 홍보센터</p>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">뉴스룸</a></li>
-                            <li><a href="" class="underline">광고</a></li>
-                            <li><a href="" class="underline">생활 속의 LG화학</a></li>
-                            <li><a href="" class="underline">SNS 채널</a></li>
-                        </ul>
-                    </li>
-                    <li class="close">
-                        <a href="#" class="prev btn">
-                            <span>close</span>
-                        </a>
-                    </li>
-                </ul>
+        </section>
+        <section class="rigth">
+            <div class="content">
+                <img src="img/cathode.png" alt="">
+                <h3 class="sub-tt">[양극재] 리튬이온배터리의 에너지원</h3>
+                <p class="tt">'리튬이온 배터리’는 요즘 가장 널리 사용되는 배터리라 할 수 있는데요. 스마트폰, 노트북과 같은 디지털 기기는 물론, 선이 없는 가전, 전기 자전거 등의 에너지원으로 사용되죠. 게다가 최근에는 전기차 보급도 확대되면서 리튬이온배터리를 적용한 제품이 더 많아지고 있습니다.</p>
             </div>
-        </div>
-        <div id="product1">
-            <div class="submenu-bg1">
-                <p class="sub-tt">PRODUCT</p>
-                <ul class="submenu">
-                    <li><p class="content-tt">01 석유화학</p>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">NCC</a></li>
-                            <li><a href="" class="underline">PO</a></li>
-                            <li><a href="" class="underline">PVC/가소제</a></li>
-                            <li><a href="" class="underline">ABS</a></li>
-                            <li><a href="" class="underline">아크릴/SAP</a></li>
-                            <li><a href="" class="underline">고무/특수수지</a></li>
-                        </ul>
-                    </li>
-                    <li><p class="content-tt">02 첨단소재</p>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">자동차소재</a></li>
-                            <li><a href="" class="underline">디스플레이소재</a></li>
-                            <li><a href="" class="underline">반도체소재</a></li>
-                            <li><a href="anode.html" class="underline">배터리소재</a></li>
-                            <li><a href="" class="underline">수처리소재</a></li>
-                        </ul>
-                    </li>
-                    <li><p class="content-tt">03 생명과학</p>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">전문의약</a></li>
-                            <li><a href="" class="underline">에스테틱</a></li>
-                            <li><a href="" class="underline">백신</a></li>
-                            <li><a href="" class="underline">진단기기</a></li>
-                            <li><a href="" class="underline">파인케미칼</a></li>
-                        </ul>
-                    </li>
-                    <li class="close">
-                        <a href="#" class="prev btn">
-                            <span>close</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div id="sustainbility1">
-            <div class="submenu-bg1">
-                <p class="sub-tt">SUSTAINBILITY</p>
-                <ul class="submenu">
-                    <li><p class="content-tt">01 지속가능경영전략</p>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">지속가능경영전략 </a></li>
-                            <li><a href="" class="underline">ESG 채권</a></li>
-                            <li><a href="" class="underline">친환경 제품 통합 브랜드</a></li>
-                            <li><a href="" class="underline">지속가능경영보고서 및 ESG 성과 데이터</a></li>
-                        </ul>
-                    </li>
-                    <li><p class="content-tt">02 기후변화</p>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">기후변화대응</a></li>
-                        </ul>
-                    </li>
-                    <li><p class="content-tt">03 공급망</p>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">책임있는 공급망</a></li>
-                            <li><a href="" class="underline">관리동반성장</a></li>
-                        </ul>
-                    </li>
-                    <li><p class="content-tt">04 Compliance</p>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">환경안전</a></li>
-                            <li><a href="" class="underline">준법경영</a></li>
-                        </ul>
-                    </li>
-                    <li><p class="content-tt">05 인권경영</p>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">인권경영</a></li>
-                        </ul>
-                    </li>
-                    <li class="close">
-                        <a href="#" class="prev btn">
-                            <span>close</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div id="recruit1">
-            <div class="submenu-bg1">
-                <p class="sub-tt">RECRUIT</p>
-                <ul class="submenu">
-                    <li><p class="content-tt">01 인재상</p>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">인재상</a></li>
-                        </ul>
-                    </li>
-                    <li><p class="content-tt">02 인사제도</p>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">인사원칙</a></li>
-                            <li><a href="" class="underline">인재육성</a></li>
-                            <li><a href="" class="underline">보상제도</a></li>
-                        </ul>
-                    </li>
-                    <li><p class="content-tt">03 지원가이드</p>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">채용 프로세스</a></li>
-                            <li><a href="" class="underline">직무소개</a></li>
-                        </ul>
-                    </li>
-                    <li><p class="content-tt">04 채용공고</p>
-                        <ul class="submenu-pd">
-                            <li><a href="" class="underline">채용공고</a></li>
-                        </ul>
-                    </li>
-                    <li class="close">
-                        <a href="#" class="prev btn">
-                            <span>close</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        </section>
     </main>
 </body>
+<footer>
+    <div class="content-mg">
+        <div>
+            <section class="footer_menu">
+                <p><a href="">1:1문의</a></p>
+                <p><a href="">개인정보처리방침</a></p>
+                <p></a><a href="">이메일무단수집거부</a></p>
+                <p><a href="">정도경영 사이버 신문고</a></p>
+                <p><a href="">협력회사 상생고</a></p>
+            </section>
+            <section class="footer_contents">
+                <p>대표이사 원**</p>
+                <p>사업자등록번호 23*-21-201907208</p>
+                <p>서울특별시 영등포구 여의대로 *** LG**** </p>
+                <p>대표번호 00-1997-1999</p>
+            </section>
+            <p>©LG Chem. All Rights Reserved.</p>
+        </div>
+        <section class="link">
+            <a href="http://hyesun1020.dothome.co.kr/site/index.html" target="_blank" class="secondary btn">LG화학 역사관</a>
+            <div class="sns">
+                <a href="https://twitter.com/" target="_blank" class="con-tt"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" class="con-tt"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" class="con-tt"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </section>
+    </div>
+</footer>
 </html>

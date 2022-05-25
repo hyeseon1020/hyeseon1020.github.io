@@ -1,8 +1,8 @@
 $(function(){
     //select
-    let btn = $('.label'),
-        rotate = $('.box .fa-caret-down'),
-        option = $('.box .option');
+    let btn = $('header .label'),
+        rotate = $('header .fa-caret-down'),
+        option = $('header .option');
     btn.click(()=>{
         $('.box').toggleClass('rotate');
     });
@@ -43,6 +43,12 @@ $(function(){
         search = $('.search');
     searchBtn.click((e)=>{
         e.preventDefault();
-        search.toggleClass('hidden');
+        if(search.hasClass('hidden')){
+            search.removeClass('hidden');
+            $('body').css({overflow:'hidden'});
+        }else{
+            search.addClass('hidden');
+            $('body').css({overflow:'auto'});
+        }
     });
 });//script
