@@ -38,6 +38,9 @@ main{
 }
 /* ----- form ----- */
 /* 클릭시 hidden 제거 */
+body.flow{
+    overflow: hidden;
+}
 #query{
     position: fixed;
     top: 0;
@@ -111,7 +114,7 @@ label.check::before{
 .select .optionList{
     position: absolute;
     left: 170px;
-    bottom: -20px;
+    bottom: -60px;
     border: 1px solid var(--white);
     background-color: var(--white);
     width: 80px;
@@ -121,16 +124,18 @@ label.check::before{
     opacity: 0;
     box-sizing: border-box;
     transform: translateY(50px);
+    visibility: hidden;
 }
 .select.rotate .optionList{
     transform: translateY(0);
     opacity: 1;
+    visibility: visible;
 }
 .select .optionList li{
     padding: 5px;
     color: var(--title-color);
 }
-.option:hover{
+.optionList li:hover{
     color: var(--primary-c);
     background-color: #ebebeb;
 }
@@ -141,7 +146,6 @@ label.check::before{
     transform: translateY(0px) rotateX(0deg);
     transition: 0.4s;
     color: var(--secondary-c);
-    cursor: pointer;
 }
 .select.rotate i{
     transform: translateY(2px) rotateX(180deg);
