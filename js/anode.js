@@ -1,4 +1,10 @@
 $(function(){
+    // 본문
+    AOS.init({
+        delay: 200,
+        once: true
+    });
+    
     // error 
     $("#queryForm").validate({
         rules: {
@@ -52,4 +58,5 @@ $(function(){
         selec.find('span').toggleClass('rotate');
         selec.toggleClass('rotate');
     });
+
 });

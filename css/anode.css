@@ -237,7 +237,7 @@ span.bad-input{
 }
 
 /* -------- main  ------- */
-main section .right-con{
+main section .right{
     display: flex;
     justify-content: flex-end;
 }
