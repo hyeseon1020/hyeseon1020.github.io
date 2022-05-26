@@ -248,14 +248,16 @@ header div .j-betweent a span{
 .underline::after{
     content: '';
     position: absolute;
-    transition: 0.4s;
+    transition: 0.5s;
     top: 100%;
     left:0;
     right: 0;
     border-bottom:2px solid var(--primary-c);
     transform: scale(0);
-    transform-origin: 0 0;
 }  
+header nav li .underline::after{
+    transform-origin: 0 0;
+}
 header nav li:hover .underline::after{
     transform: scale(1);
 }
