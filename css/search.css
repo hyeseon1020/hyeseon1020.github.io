@@ -80,3 +80,7 @@ main .search button a{
     flex-wrap: wrap;
     gap: 24px;
 }
+
+.tab-result > div > ul > li:hover a{
+    color: var(--primary-c);
+}
