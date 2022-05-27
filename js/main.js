@@ -14,7 +14,28 @@ $(document).ready(function(){
         section.eq(idx).find('.container').addClass('active');
     });
     
-
+    $(document).ready(function(){
+        let section = $('#fullpage section');
+        let more = section.find('span');
+    
+        $('#fullpage').fullpage({
+            //options here
+            autoScrolling:true,
+            scrollHorizontally: true,
+            navigation: true,
+        });
+    
+        // more
+        more.find('a').click(function(e){
+            e.preventDefault();
+            let targetId = $(this).attr('href');
+            $(targetId).addClass('visible');
+            $(targetId).find('.close').click((e)=>{
+                e.preventDefault();
+                $(targetId).removeClass('visible');
+            });
+        });
+    });//script
     $(window).scroll(function(){
         let sct = $(this).scrollTop();
         let sections = $('.scroll');
