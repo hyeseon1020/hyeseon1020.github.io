@@ -382,18 +382,16 @@ header > .search{
     color: #a9a9a9; 
     text-align: center;
 }
-.search button a{
-    width: 55px;
-    height: 55px;
+.search .search-link span{
+    font-size: 55px;
+    color:var(--secondary-c);
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    background: url(../img/search_icon01.svg) no-repeat;
-    text-indent: -999em;
 }
-.search button a:hover{
-    background-image: url(../img/search_icon02.svg);
+.search .search-link:hover span{
+    color: var(--primary-c);
 }
 .quickly{
     display: flex;

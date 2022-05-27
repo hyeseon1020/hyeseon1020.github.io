@@ -17,10 +17,8 @@ main .search input{
 main input::placeholder{
     font-size: 24px;
 }
-main .search button a{
-    width: 39px;
-    height: 39px;
-    background-size: 100% 100%;
+main .search .search-link span{
+    font-size: 39px;
 }
 /* search tab */
 .tab-wrapper{
