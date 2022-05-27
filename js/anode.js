@@ -1,4 +1,16 @@
 $(function(){
+    //search
+    let searchBtn = $('header .search-btn'),
+        search = $('header .search');
+    searchBtn.click((e)=>{
+        e.preventDefault();
+        if(search.hasClass('hidden')){
+            $('body').css({overflow:'auto'});
+        }else{
+            $('body').css({overflow:'hidden'});
+        }
+    });
+
     // 본문
     AOS.init({
         delay: 200,
@@ -58,5 +70,5 @@ $(function(){
         selec.find('span').toggleClass('rotate');
         selec.toggleClass('rotate');
     });
-
+    
 });

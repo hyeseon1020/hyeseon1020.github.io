@@ -18,20 +18,22 @@ $(function(){
     let menuBtn = $('.menu'),
         menuWrap = $('#menu_wrapper'),
         menu = $('#menu'),
-        menuItem = menu.find('li');
+        menuItem = menu.find('li a');
 
     menuBtn.click((e)=>{
         e.preventDefault();
         menuWrap.addClass('visible');
+        $('body').css({overflow:'hidden'});
     });
-    menu.find('.close').click((e)=>{
+    menu.find('.close a').click((e)=>{
         e.preventDefault();
         menuWrap.removeClass('visible');
+        $('body').css({overflow:'auto'});
     });
 
     menuItem.click(function(e){
         e.preventDefault();
-        let targetId = $(this).find('a').attr('href');
+        let targetId = $(this).attr('href');
         $(targetId).addClass('visible');
         $(targetId).find('.close').click((e)=>{
             e.preventDefault();
@@ -39,16 +41,14 @@ $(function(){
         });
     });
     //search
-    let searchBtn = $('.search-btn'),
-        search = $('.search');
+    let searchBtn = $('header .search-btn'),
+        search = $('header .search');
     searchBtn.click((e)=>{
         e.preventDefault();
         if(search.hasClass('hidden')){
             search.removeClass('hidden');
-            $('body').css({overflow:'hidden'});
         }else{
             search.addClass('hidden');
-            $('body').css({overflow:'auto'});
         }
     });
 });//script

@@ -1,4 +1,16 @@
 $(function(){
+    //search
+    let searchBtn = $('header .search-btn'),
+        search = $('header .search');
+    searchBtn.click((e)=>{
+        e.preventDefault();
+        if(search.hasClass('hidden')){
+            $('body').css({overflow:'auto'});
+        }else{
+            $('body').css({overflow:'hidden'});
+        }
+    });
+
     let tabMenu = $('.tab-menu li'),
         tabResult = $('.tab-result > div'),
         result = $('.result-leng');
@@ -19,5 +31,5 @@ $(function(){
         tabResult.hide();
         tabResult.eq(idx).show();
     }
-
+    
 }); //ready
