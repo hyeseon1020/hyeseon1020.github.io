@@ -130,9 +130,6 @@ section.fp-completely .container > p{transition-delay: 0.2s;}
     30%{transform: scaleY(1.5);}
     100%{transform: translateY(30px); opacity: 1;}
 }
-.fp-viewing-3 main .down{
-    display: none;
-}
 /* ------------------ MORE ---------------- */
 #company1, #product1 ,#sustainbility1 ,#recruit1{
     position: fixed;
