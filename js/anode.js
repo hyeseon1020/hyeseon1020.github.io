@@ -83,30 +83,25 @@ $(function(){
 
 
     let availableTags = [
-        "ActionScript",
-        "AppleScript",
+        "NCC",
+        "PO",
         "Asp",
-        "BASIC",
-        "C",
-        "C++",
-        "Clojure",
-        "COBOL",
-        "ColdFusion",
-        "Erlang",
-        "Fortran",
-        "Groovy",
-        "Haskell",
-        "Java",
-        "JavaScript",
-        "Lisp",
-        "Perl",
-        "PHP",
-        "Python",
-        "Ruby",
-        "Scala",
-        "Scheme"
+        "PVC/가소제",
+        "ABS",
+        "아크릴/SAP",
+        "고무/특수수지",
+        "자동차소재",
+        "디스플레이소재",
+        "반도체소재",
+        "배터리소재",
+        "수처리소재",
+        "전문의약",
+        "에스테틱",
+        "백신",
+        "진단기기",
+        "파인케미칼"
       ];
-      $( "#category" ).autocomplete({
+      $( "#tags" ).autocomplete({
         source: availableTags
       });
 });
