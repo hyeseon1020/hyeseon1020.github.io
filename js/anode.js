@@ -26,7 +26,7 @@ $(function(){
             },
             type:{
                 required: true,
-            }
+            }//안먹음
         },
         messages:{
             email: {
@@ -35,7 +35,7 @@ $(function(){
             },
             type:{
                 required: '문의유형을 선택해주세요. ',
-            }
+            }//안먹음
         },
         errorClass:'bad-input',
         errorElement: "span"
@@ -81,7 +81,7 @@ $(function(){
         selec.toggleClass('rotate');
     });
 
-
+    //안먹음
     let availableTags = [
         "NCC",
         "PO",
@@ -100,8 +100,9 @@ $(function(){
         "백신",
         "진단기기",
         "파인케미칼"
-      ];
-      $( "#tags" ).autocomplete({
-        source: availableTags
-      });
+    ];
+    $( "#title" ).autocomplete({
+    source: availableTags
+    });
+
 });
