@@ -43,7 +43,7 @@ $(function(){
     // close
     let nav = $('.query-nav a'),
         query = $('#query'),
-        x = query.find('.fa-x');
+        x = query.find('#close');
         
     nav.click((e)=>{
         e.preventDefault();
@@ -81,4 +81,32 @@ $(function(){
         selec.toggleClass('rotate');
     });
 
+
+    let availableTags = [
+        "ActionScript",
+        "AppleScript",
+        "Asp",
+        "BASIC",
+        "C",
+        "C++",
+        "Clojure",
+        "COBOL",
+        "ColdFusion",
+        "Erlang",
+        "Fortran",
+        "Groovy",
+        "Haskell",
+        "Java",
+        "JavaScript",
+        "Lisp",
+        "Perl",
+        "PHP",
+        "Python",
+        "Ruby",
+        "Scala",
+        "Scheme"
+      ];
+      $( "#category" ).autocomplete({
+        source: availableTags
+      });
 });

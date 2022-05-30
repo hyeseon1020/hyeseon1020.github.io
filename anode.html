@@ -17,7 +17,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/anode.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
     <script src="js/library/aos.js"></script>
     <script src="js/library/jquery.validate.min.js"></script>
     <script src="js/commons.js"></script>
@@ -305,7 +306,7 @@
         <div id="query" class="hidden">
             <form action="" method="post" novalidate id="queryForm">
                 <h3 class="content-tt form-pd">제품문의</h3>
-                <i class="fa-solid fa-x"></i>
+                <button type="reset" id="close"><i class="fa-solid fa-x"></i></button>
                 <div class="form-pd checkbox">
                     <span class="con-tt">문의유형<em>&#42;</em></span>
                     <div class="check-box">
@@ -329,16 +330,20 @@
                         <button class="label" class="tt">사업구분</button>
                         <i class="fa-solid fa-caret-down"></i>
                         <ul class="optionList">
-                            <li class="option tt">석유화학</li>
-                            <li class="option tt">첨단소재</li>
-                            <li class="option tt">생명과학</li>
+                            <li class="option">석유화학</li>
+                            <li class="option">첨단소재</li>
+                            <li class="option">생명과학</li>
                         </ul>
                     </div>
                 </div>
-                <p class="product-title form-pd">
+                <div class="ui-widget product-title form-pd">
+                    <label for="catepory" class="con-tt">제품명<em>&#42;</em></label>
+                    <input type="text"  id="catepory">
+                </div>
+                <!-- <p class="product-title form-pd">
                     <span class="con-tt">제품명<em>&#42;</em></span>
                     <a href="" class="secondary btn secondary-color">제품검색</a>
-                </p>
+                </p> -->
                 <p class="title form-pd">
                     <label for="title" class="con-tt">제목</label>
                     <input type="text" name="title" id="title">
