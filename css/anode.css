@@ -140,14 +140,15 @@ label.check::before{
     background-color: #ebebeb;
 }
 /* i클릭시 .select.rotate 추가 */
-.select i{
+.select .fa-caret-down{
     font-size: 20px;
     padding-left: 5px;
     transform: translateY(0px) rotateX(0deg);
     transition: 0.4s;
     color: var(--secondary-c);
+    cursor: pointer;
 }
-.select.rotate i{
+.select.rotate .fa-caret-down{
     transform: translateY(2px) rotateX(180deg);
 }
 /* 제품명 */

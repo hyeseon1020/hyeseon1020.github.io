@@ -37,7 +37,7 @@ $(function(){
     // close
     let nav = $('.query-nav a'),
         query = $('#query'),
-        x = query.find('i');
+        x = query.find('.fa-x');
         
     nav.click((e)=>{
         e.preventDefault();
@@ -58,7 +58,7 @@ $(function(){
     // select
     let selec = $('.select'),
         btn = selec.find('.label'),
-        rotate = selec.find('i'),
+        rotate = selec.find('.fa-caret-down'),
         option = selec.find('.option');
     console.log(rotate);
     btn.click(()=>{
@@ -70,5 +70,9 @@ $(function(){
         selec.find('span').toggleClass('rotate');
         selec.toggleClass('rotate');
     });
-    
+    rotate.click((e)=>{
+        e.preventDefault();
+        selec.toggleClass('rotate');
+    });
+
 });
