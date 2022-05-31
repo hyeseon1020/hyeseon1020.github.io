@@ -81,7 +81,6 @@ $(function(){
         selec.toggleClass('rotate');
     });
 
-    //안먹음
     let availableTags = [
         "NCC",
         "PO",

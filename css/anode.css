@@ -159,6 +159,9 @@ label.check::before{
     display: flex;
     gap: 90px;
 }
+#queryForm .product-title label{
+    font-family: var(--body-ff);
+}
 /* .product-title a{
     height: var(--line-height);
     box-sizing: border-box;
