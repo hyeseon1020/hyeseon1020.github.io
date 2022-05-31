@@ -46,7 +46,7 @@ section.fp-completely .container .up{
     opacity: 1;
 }
 .up{
-    transition: 0.5s;
+    transition: 0.3s;
     transform: translateY(50px);
     opacity: 0;
 }
@@ -54,12 +54,12 @@ h2{
     color: #000;
     padding-bottom: calc(var(--line-height)*2);
 }
-section.fp-completely .container > p{transition-delay: 0.2s;}
+section.fp-completely .container > p{transition-delay: 0.15s;}
 .section span{
     color: var(--secondary-c);
     padding-top: calc(var(--line-height)*2);
     display: block;
-    transition-delay: 0.4s;
+    transition-delay: 0.3s;
 }
 .con-tt{
     color: var(--secondary-c);
