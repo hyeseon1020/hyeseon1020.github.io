@@ -66,7 +66,6 @@ $(function(){
         btn = selec.find('.label'),
         rotate = selec.find('.fa-caret-down'),
         option = selec.find('.option');
-    console.log(rotate);
     btn.click(()=>{
         selec.toggleClass('rotate');
     });
