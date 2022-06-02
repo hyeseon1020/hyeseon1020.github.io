@@ -28,6 +28,7 @@
     <script src="js/anode.js"></script>
 </head>
 <body>
+    <a href="#content" class="skip_to_content">Skip to Content</a>
     <header>
         <div class="content-mg j-betweent">
             <h1>
@@ -294,7 +295,7 @@
             </div>
         </section>
     </header>
-    <main>
+    <main id="content">
         <section class="main" data-aos="fade-right">
             <div class="anode">
                 <h2 class="main-tt">양극재</h2>
@@ -338,6 +339,11 @@
                             <li class="option">생명과학</li>
                         </ul>
                     </div>
+                    <select name="" id="">
+                            <option value="석유화학">석유화학</option>
+                            <option value="첨단소재">첨단소재</option>
+                            <option value="생명과학">생명과학</option>
+                    </select>
                 </div>
                 <div class="ui-widget product-title form-pd">
                     <label for="title" class="con-tt">제품명<em>&#42;</em></label>
@@ -352,8 +358,8 @@
                     <input type="text" name="title" id="title">
                 </p>
                 <p class="query-con form-pd">
-                    <label for="content" class="con-tt">문의내용</label>
-                    <textarea name="content" name="content" id="content" placeholder="문의합니다"></textarea>
+                    <label for="q-content" class="con-tt">문의내용</label>
+                    <textarea name="content" name="content" id="q-content" placeholder="문의합니다"></textarea>
                 </p>
                 <h4 class="content-tt form-pd">문의자 정보</h4>
                 <p class="email-form form-pd">
@@ -442,6 +448,15 @@
             </div>
         </section>
     </main>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-701DDPEHGK"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-701DDPEHGK');
+    </script>
 </body>
 <footer>
     <div class="content-mg">
@@ -464,9 +479,9 @@
         <section class="link">
             <a href="http://hyesun1020.dothome.co.kr/site/index.html" target="_blank" class="secondary btn">LG화학 역사관</a>
             <div class="sns">
-                <a href="https://twitter.com/" target="_blank" class="con-tt"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.facebook.com/" target="_blank" class="con-tt"><i class="fa-brands fa-facebook-square"></i></a>
-                <a href="https://www.youtube.com/" target="_blank" class="con-tt"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/" target="_blank" class="con-tt"><i class="fa-brands fa-twitter"></i><span class="hidden">twitter</span></a>
+                <a href="https://www.facebook.com/" target="_blank" class="con-tt"><i class="fa-brands fa-facebook-square"></i><span class="hidden">facebook</span></a>
+                <a href="https://www.youtube.com/" target="_blank" class="con-tt"><i class="fa-brands fa-youtube"></i><span class="hidden">youtube</span></a>
             </div>
         </section>
     </div>

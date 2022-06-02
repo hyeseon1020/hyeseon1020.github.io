@@ -23,6 +23,7 @@
     <script src="js/searchF.js"></script>
 </head>
 <body>
+    <a href="#content" class="skip_to_content">Skip to Content</a>
     <header>
         <div class="content-mg j-betweent">
             <h1>
@@ -289,7 +290,7 @@
             </div>
         </section>
     </header>
-    <main>
+    <main id="content">
         <div class="search">
             <form action="#" method="get">
                 <input type="search" id="gsearch" name="gsearch" class="content-tt" placeholder="검색어를 입력하세요.">
@@ -722,6 +723,15 @@
             </div>
         </div>
     </main>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-701DDPEHGK"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-701DDPEHGK');
+    </script>
 </body>
 <footer>
     <div class="content-mg">
@@ -744,9 +754,9 @@
         <section class="link">
             <a href="http://hyesun1020.dothome.co.kr/site/index.html" target="_blank" class="secondary btn">LG화학 역사관</a>
             <div class="sns">
-                <a href="https://twitter.com/" target="_blank" class="con-tt"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.facebook.com/" target="_blank" class="con-tt"><i class="fa-brands fa-facebook-square"></i></a>
-                <a href="https://www.youtube.com/" target="_blank" class="con-tt"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/" target="_blank" class="con-tt"><i class="fa-brands fa-twitter"></i><span class="hidden">twitter</span></a>
+                <a href="https://www.facebook.com/" target="_blank" class="con-tt"><i class="fa-brands fa-facebook-square"></i><span class="hidden">facebook</span></a>
+                <a href="https://www.youtube.com/" target="_blank" class="con-tt"><i class="fa-brands fa-youtube"></i><span class="hidden">youtube</span></a>
             </div>
         </section>
     </div>
