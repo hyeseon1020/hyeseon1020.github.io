@@ -294,13 +294,13 @@
     <main id="content">
         <div class="search">
             <form action="#" method="get">
-                <input type="search" id="gsearch" name="gsearch" class="content-tt" placeholder="검색어를 입력하세요.">
-                <label for="gsearch" class="hidden">검색창</label>
+                <input type="search" id="search" name="search" class="content-tt" placeholder="검색어를 입력하세요.">
+                <label for="search" class="hidden">검색창</label>
                 <a href="anode.html" class="search-link"><span class="material-symbols-outlined"> search</span></a>
             </form>
         </div>
         <div class="tab-wrapper">
-            <section>
+            <div>
                 <ul class="tab-menu">
                     <li><a href="#a" class="con-tt">a</a></li>
                     <li><a href="#b" class="con-tt">b</a></li>
@@ -320,10 +320,10 @@
                 <p class="result-leng">
                     검색결과 <b>'15'</b> 건
                 </p>
-            </section>
+            </div>
             <div class="tab-result">
                 <div id="a">
-                    <div id="a-1">
+                    <div class="product-content">
                         <a href="" class="content">
                             <img src="img/product1.png" alt="Acrylate">
                             <h3><b>A</b>crylate</h3>
@@ -364,8 +364,6 @@
                             <h3><b>A</b>dvanSure_TB_NTM_realtimePCR</h3>
                             <p>생명과학</p>
                         </a>
-                    </div>
-                    <div id="a-2">
                         <a href="" class="content">
                             <img src="img/product9.png" alt="AAdvanSure_TB-IGRA_ELISA">
                             <h3><b>A</b>AdvanSure_TB-IGRA_ELISA</h3>
@@ -402,13 +400,15 @@
                             <p>석유화학</p>
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#a-1">1</a></li>
-                        <li><a href="#a-2">2</a></li> 
-                    </ul>
+                    <div>
+                        <ul class="numbers">
+                            <li><a href="" class="active">1</a></li>
+                            <li><a href="">2</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="b">
-                    <div id="b-1">
+                    <div class="product-content">
                         <a href="" class="content">
                             <img src="img/b1.png" alt="BR">
                             <h3><b>B</b>R</h3>
@@ -435,12 +435,14 @@
                             <p>첨단소재</p>
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#b-1">1</a></li>
-                    </ul>
+                    <div>
+                        <ul class="numbers">
+                            <li><a href="" class="active">1</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="c">
-                    <div id="c-1">
+                    <div class="product-content">
                         <a href="" class="content">
                             <img src="img/c1.png" alt="CNT">
                             <h3><b>C</b>NT</h3>
@@ -452,12 +454,14 @@
                             <p>첨단소재</p>
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#c-1">1</a></li>
-                    </ul>
+                    <div>
+                        <ul class="numbers">
+                            <li><a href="" class="active">1</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="e">
-                    <div id="e-1">
+                    <div class="product-content">
                         <a href="" class="content">
                             <img src="img/e1.png" alt="EVA">
                             <h3><b>E</b>VA</h3>
@@ -469,36 +473,42 @@
                             <p>석유화학</p>
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#e-1">1</a></li>
-                    </ul>
+                    <div>
+                        <ul class="numbers">
+                            <li><a href="" class="active">1</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="f">
-                    <div id="f-1">
+                    <div class="product-content">
                         <a href="" class="content">
                             <img src="img/f1.png" alt="FSPM">
                             <h3><b>F</b>SPM</h3>
                             <p>첨단소재</p>
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#f-1">1</a></li>
-                    </ul>
+                    <div>
+                        <ul class="numbers">
+                            <li><a href="" class="active">1</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="h">
-                    <div id="h-1">
+                    <div class="product-content">
                         <a href="" class="content">
                             <img src="img/h1.png" alt="HDPE">
                             <h3><b>H</b>DPE</h3>
                             <p>석유화학</p>
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#f-1">1</a></li>
-                    </ul>
+                    <div>
+                        <ul class="numbers">
+                            <li><a href="" class="active">1</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="i">
-                    <div id="i-1">
+                    <div class="product-content">
                         <a href="" class="content">
                             <img src="img/i1.png" alt="IVF-M HP 멀티도즈 주">
                             <h3><b>I</b>VF-M HP 멀티도즈 주</h3>
@@ -520,12 +530,14 @@
                             <p>석유화학</p>
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#i-1">1</a></li>
-                    </ul>
+                    <div>
+                        <ul class="numbers">
+                            <li><a href="" class="active">1</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="k">
-                    <div id="k-1">
+                    <div class="product-content">
                         <a href="" class="content">
                             <img src="img/k1.png" alt="KEYFLEX BT">
                             <h3><b>K</b>EYFLEX BT</h3>
@@ -537,12 +549,14 @@
                             <p>첨단소재</p>
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#k-1">1</a></li>
-                    </ul>
+                    <div>
+                        <ul class="numbers">
+                            <li><a href="" class="active">1</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="l">
-                    <div id="l-1">
+                    <div class="product-content">
                         <a href="" class="content">
                             <img src="img/l1.png" alt="LUPOY">
                             <h3><b>L</b>UPOY</h3>
@@ -583,8 +597,6 @@
                             <h3><b>L</b>UMILOY</h3>
                             <p>첨단소재</p>
                         </a>
-                    </div>
-                    <div id="l-2">
                         <a href="" class="content">
                             <img src="img/product9.png" alt="LUMIPLAS">
                             <h3><b>L</b>UMIPLAS</h3>
@@ -606,13 +618,15 @@
                             <p>석유화학</p>
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#l-1">1</a></li>
-                        <li><a href="#l-2">2</a></li> 
-                    </ul>
+                    <div>
+                        <ul class="numbers">
+                            <li><a href="" class="active">1</a></li>
+                            <li><a href="">2</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="m">
-                    <div id="m-1">
+                    <div class="product-content">
                         <a href="" class="content">
                             <img src="img/m1.png" alt="MBS">
                             <h3><b>M</b>BS</h3>
@@ -624,12 +638,14 @@
                             <p>석유화학</p>
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#m-1">1</a></li>
-                    </ul>
+                    <div>
+                        <ul class="numbers">
+                            <li><a href="" class="active">1</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="n">
-                    <div id="n-1">
+                    <div class="product-content">
                         <a href="" class="content">
                             <img src="img/n1.png" alt="NBR">
                             <h3><b>N</b>BR</h3>
@@ -651,12 +667,14 @@
                             <p>석유화학</p>
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#n-1">1</a></li>
-                    </ul>
+                    <div>
+                        <ul class="numbers">
+                            <li><a href="" class="active">1</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="o">
-                    <div id="o-1">
+                    <div class="product-content">
                         <a href="" class="content">
                             <img src="img/o1.png" alt="OLED편광판">
                             <h3><b>O</b>LED편광판</h3>
@@ -668,12 +686,14 @@
                             <p>첨단소재</p>
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#o-1">1</a></li>
-                    </ul>
+                    <div>
+                        <ul class="numbers">
+                            <li><a href="" class="active">1</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="s">
-                    <div id="s-1">
+                    <div class="product-content">
                         <a href="" class="content">
                             <img src="img/s1.png" alt="SAP">
                             <h3><b>S</b>AP</h3>
@@ -700,12 +720,14 @@
                             <p>석유화학</p>
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#s-1">1</a></li>
-                    </ul>
+                    <div>
+                        <ul class="numbers">
+                            <li><a href="" class="active">1</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="t">
-                    <div id="o-1">
+                    <div class="product-content">
                         <a href="" class="content">
                             <img src="img/t1.png" alt="Thermal Pad">
                             <h3><b>T</b>hermal Pad</h3>
@@ -717,13 +739,44 @@
                             <p>첨단소재</p>
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#t-1">1</a></li>
-                    </ul>
+                    <div>
+                        <ul class="numbers">
+                            <li><a href="" class="active">1</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="content-mg">
+            <div>
+                <div class="footer_menu">
+                    <p><a href="">1:1문의</a></p>
+                    <p><a href="">개인정보처리방침</a></p>
+                    <p><a href="">이메일무단수집거부</a></p>
+                    <p><a href="">정도경영 사이버 신문고</a></p>
+                    <p><a href="">협력회사 상생고</a></p>
+                </div>
+                <div class="footer_contents">
+                    <p>대표이사 원**</p>
+                    <p>사업자등록번호 23*-21-201907208</p>
+                    <p>서울특별시 영등포구 여의대로 *** LG**** </p>
+                    <p>대표번호 00-1997-1999</p>
+                </div>
+                <p>©LG Chem. All Rights Reserved.</p>
+            </div>
+            <section class="link">
+                <h4 class="hidden">link</h4>
+                <a href="http://hyesun1020.dothome.co.kr/site/index.html" target="_blank" class="secondary btn">LG화학 역사관</a>
+                <div class="sns">
+                    <a href="https://twitter.com/" target="_blank" class="con-tt"><i class="fa-brands fa-twitter"></i><span class="hidden">twitter</span></a>
+                    <a href="https://www.facebook.com/" target="_blank" class="con-tt"><i class="fa-brands fa-facebook-square"></i><span class="hidden">facebook</span></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="con-tt"><i class="fa-brands fa-youtube"></i><span class="hidden">youtube</span></a>
+                </div>
+            </section>
+        </div>
+    </footer>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-701DDPEHGK"></script>
     <script>
@@ -734,32 +787,5 @@
     gtag('config', 'G-701DDPEHGK');
     </script>
 </body>
-<footer>
-    <div class="content-mg">
-        <div>
-            <section class="footer_menu">
-                <p><a href="">1:1문의</a></p>
-                <p><a href="">개인정보처리방침</a></p>
-                <p></a><a href="">이메일무단수집거부</a></p>
-                <p><a href="">정도경영 사이버 신문고</a></p>
-                <p><a href="">협력회사 상생고</a></p>
-            </section>
-            <section class="footer_contents">
-                <p>대표이사 원**</p>
-                <p>사업자등록번호 23*-21-201907208</p>
-                <p>서울특별시 영등포구 여의대로 *** LG**** </p>
-                <p>대표번호 00-1997-1999</p>
-            </section>
-            <p>©LG Chem. All Rights Reserved.</p>
-        </div>
-        <section class="link">
-            <a href="http://hyesun1020.dothome.co.kr/site/index.html" target="_blank" class="secondary btn">LG화학 역사관</a>
-            <div class="sns">
-                <a href="https://twitter.com/" target="_blank" class="con-tt"><i class="fa-brands fa-twitter"></i><span class="hidden">twitter</span></a>
-                <a href="https://www.facebook.com/" target="_blank" class="con-tt"><i class="fa-brands fa-facebook-square"></i><span class="hidden">facebook</span></a>
-                <a href="https://www.youtube.com/" target="_blank" class="con-tt"><i class="fa-brands fa-youtube"></i><span class="hidden">youtube</span></a>
-            </div>
-        </section>
-    </div>
-</footer>
+
 </html>

@@ -319,7 +319,7 @@ section .car > div{
     display: block;
     overflow: hidden;
 }
-.content .more > div{
+.content .more div{
     width: 760px;
     position: absolute;
     right: 0;
@@ -329,6 +329,6 @@ section .car > div{
     transition: 0.3s ease-in-out; 
     transform: scale(1.2);
 }
-.content .more:hover .sub-tt a{
+.content .more:hover .sub-tt{
     color: var(--primary-c);
 }

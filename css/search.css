@@ -26,7 +26,7 @@ main .search .search-link span{
     margin: 0 auto;
     padding: calc(var(--line-height)*3) 0;
 }
-.tab-wrapper > section{
+.tab-wrapper > div{
     display: flex;
     justify-content: space-around;
     padding-bottom: calc(var(--line-height)*3);
@@ -42,7 +42,7 @@ main .search .search-link span{
 .tab-menu a.target{
     color: var(--primary-c);
 }
-.tab-wrapper section p{
+.tab-wrapper div p{
     font-size: 20px;
 }
 /* tab-result */
@@ -68,17 +68,11 @@ main .search .search-link span{
     color: var(--primary-c);
 }
 /* target 받은 요소 display : flex로 변경 */
-.tab-result #a-1, .tab-result #b-1, .tab-result #c-1, .tab-result #e-1, .tab-result #f-1, .tab-result #h-1, .tab-result #i-1, .tab-result #k-1, .tab-result #l-1, .tab-result #m-1, .tab-result #n-1, .tab-result #o-1, .tab-result #s-1, .tab-result #t-1{
+.tab-result .product-content{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
-.tab-result #a-2, .tab-result #l-2{
-    display: none;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-
-.tab-result > div > ul > li:hover a{
+.tab-result .numbers > li a.active{
     color: var(--primary-c);
 }
