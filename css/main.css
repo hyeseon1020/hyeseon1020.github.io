@@ -1,5 +1,68 @@
 @import url(common.css);
 
+/* -------------------- POPUP ----------------------- */
+.popup-wrapper{
+    position: fixed;
+    background: rgba(0,0,0,0.3);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.popup{
+    width: 520px;
+    padding: 50px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border: 1px solid #ebebeb;
+    box-shadow: 3px 5px 10px rgba(0,0,0,.2);
+    border-radius: 8px;
+    z-index: 2;
+}
+.popup h2{
+    padding-bottom: var(--line-height);
+    font-weight: 500;
+}
+.popup hr{
+    border: none;
+    background-color: #999999;
+    height: 1px;
+    margin: 20px 0;
+}
+.popup b, .popup em{
+    font-weight: 500;
+}
+.popup b.tt{
+    font-size: 18px;
+}
+.pop-menu a{
+    display: inline-block;
+    padding-bottom: 27px;
+    padding-right: 10px;
+}
+.pop-menu a:last-of-type{
+    padding-right: 0;
+}
+.pop-menu a::before{
+    content: '|';
+    display: inline-block;
+    padding-right: 5px;
+}
+.popup a:hover{color: var(--primary-c);}
+#close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.pop-close{
+    position: absolute;
+    right: 40px;
+}
+
 /* ------------ Scroll Down ---------------------- */
 header{
     position: fixed;

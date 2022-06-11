@@ -43,7 +43,7 @@ body{
 .tt{
     font-size:calc(var(--body-fz)*1.25);
 }
-em, b{
+b{
     color: var(--primary-c);
 }
 .link{
@@ -132,7 +132,7 @@ em, b{
     display: flex;
     justify-content: space-between;
 }
-/* --------------------HEADER----------------------- */
+/* -------------------- skitp to content ----------------------- */
 .skip_to_content{
     background: #000;
     color: #fff;
@@ -148,7 +148,7 @@ em, b{
    transform: none;
    opacity: 1;
 }
-
+/* --------------------HEADER----------------------- */
 header{
     padding: calc(1rem*3) 0;
     box-shadow: 0px 1px var(--primary-c);
