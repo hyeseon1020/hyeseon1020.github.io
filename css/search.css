@@ -72,6 +72,8 @@ main .search .search-link span{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    justify-content: flex-start;
+    width: 1280px;
 }
 .tab-result .numbers > li a.active{
     color: var(--primary-c);
