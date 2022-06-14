@@ -482,3 +482,14 @@ footer .content-mg > div{
 .sns a:hover{
     color: rgba(255, 170, 196, 0.8);
 }
+
+/* 반응형 */
+@media (min-width:1920px){
+   header .submenu-bg > p, #content .submenu-bg1 > p {left: 50px;}
+}
+@media (max-width:1700px){
+    header .submenu-bg > p, #content .submenu-bg1 > p {left: 28px;}
+}
+@media (max-width:1590px){
+    header .submenu-bg > p, #content .submenu-bg1 > p {display: none;}
+}

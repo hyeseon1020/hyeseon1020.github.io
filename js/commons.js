@@ -23,12 +23,10 @@ $(function(){
     menuBtn.click((e)=>{
         e.preventDefault();
         menuWrap.addClass('visible');
-        $('body').css({overflow:'hidden'});
     });
     menu.find('.close a').click((e)=>{
         e.preventDefault();
         menuWrap.removeClass('visible');
-        $('body').css({overflow:'auto'});
     });
 
     menuItem.click(function(e){
