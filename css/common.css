@@ -231,6 +231,7 @@ header div .j-betweent a span{
 /* 클릭시 visible*/
 .visible #menu{
     right: 0;
+    overflow: auto;
 }
 #menu{
     position: absolute;
@@ -300,6 +301,7 @@ header nav li:hover .underline::after{
     width: 49.16%;
     height: 100%;
     background: var(--white);
+    overflow: auto;
 }
 .submenu-bg > p{
     letter-spacing: 50px;
@@ -310,13 +312,13 @@ header nav li:hover .underline::after{
     transform: rotate(90deg) translateY(-100%);;
     transform-origin: 0 0;
 }
-#company .submenu{background: url(../img/small-bg1.jpg) no-repeat 0 calc(var(--line-height)*2);
+#company .submenu{background: url(../img/small-bg1.jpg) no-repeat 0 calc(var(--line-height)*2) / 100%;
 }
-#product .submenu{background: url(../img/small-bg2.jpg) no-repeat 0 calc(var(--line-height)*2);
+#product .submenu{background: url(../img/small-bg2.jpg) no-repeat 0 calc(var(--line-height)*2) / 100%;
 }
-#sustainbility .submenu{background: url(../img/small-bg3.jpg) no-repeat 0 calc(var(--line-height)*2);
+#sustainbility .submenu{background: url(../img/small-bg3.jpg) no-repeat 0 calc(var(--line-height)*2) / 100%;
 }
-#recruit .submenu{background: url(../img/small-bg4.jpg) no-repeat 0 calc(var(--line-height)*2);
+#recruit .submenu{background: url(../img/small-bg4.jpg) no-repeat 0 calc(var(--line-height)*2) / 100%;
 }
 .submenu{
     padding: 216px 0 0;
@@ -325,7 +327,7 @@ header nav li:hover .underline::after{
     height: 675px;
     display:flex;
 	flex-wrap:wrap;
-    align-content:space-between; 
+    align-content:space-between;
 }
 .submenu > li > p{
     font-weight: 500;
@@ -485,11 +487,24 @@ footer .content-mg > div{
 
 /* 반응형 */
 @media (min-width:1920px){
-   header .submenu-bg > p, #content .submenu-bg1 > p {left: 50px;}
+    .submenu-bg > p {left: 50px;}
 }
 @media (max-width:1700px){
-    header .submenu-bg > p, #content .submenu-bg1 > p {left: 28px;}
+    .submenu-bg > p{left: 28px;}
+    #menu > ul > li {
+        padding: 5vh 0;
+    }
 }
 @media (max-width:1590px){
-    header .submenu-bg > p, #content .submenu-bg1 > p {display: none;}
+    .submenu-bg > p{display: none;}
+}
+@media (max-width:1400px){
+    #menu{width: 60%;}
+    .submenu-bg{width: 60%;}
+}
+@media (max-width:1080px){
+    #menu{width: 100%;}
+    #menu > ul > li:last-child {padding: var(--line-height) 0 0;}
+    #company, #product ,#sustainbility ,#recruit{right: -200%;}
+    .submenu-bg{width: 100%;}
 }
