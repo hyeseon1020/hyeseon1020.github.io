@@ -336,6 +336,7 @@ header nav li:hover .underline::after{
 }
 .submenu > li{
     width:100%;
+    position: relative;
 }
 .submenu .submenu-pd{
     display: flex;
@@ -503,8 +504,79 @@ footer .content-mg > div{
     .submenu-bg{width: 60%;}
 }
 @media (max-width:1080px){
-    #menu{width: 100%;}
+    #menu{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+    }
     #menu > ul > li:last-child {padding: var(--line-height) 0 0;}
     #company, #product ,#sustainbility ,#recruit{right: -200%;}
-    .submenu-bg{width: 100%;}
+    .submenu-bg{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .submenu { height: 70vh;}
+    header > .search {top: 94.9px;}
+}
+@media (max-width:1024px){
+    header {padding: var(--line-height) 0;}
+    .content-mg {margin: 0 var(--line-height);}
+    header .content-mg h1{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    } 
+    header div .j-betweent {width: 100%;}
+    .box {display: none;}
+    .search-pg { width: 600px;}
+    .search input {
+        width: 500px;
+        font-size: calc(var(--body-fz)*2);
+        height: calc(var(--line-height)*2);
+    }
+    .quickly { gap: 190px;}
+    .quickly p {transform: translateX(-10%);}
+    .toggle-btn{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        top: 14px;
+        right: 0;
+      }
+    .toggle-btn span{
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        border-radius:4px;
+        background: #3d4146;
+        transition: 0.2s ease-in-out;
+      }
+    .toggle-btn span:first-child{
+        transform: rotate(90deg);
+    }
+    /* active 추가시 아코디언 */
+    .toggle-btn.active span:first-child{
+        transform: none;
+    }
+    /* .submenu .submenu-pd{
+        display: none;
+    }
+    .submenu .submenu-pd.toggle{
+        display: flex;
+    } */
+}
+@media (max-width:800px){
+    header .content-mg h1 {
+        top: 50%;
+        transform: translate(-50%,-45%);
+    }
+    header .content-mg h1 img{
+        width: 127px;
+    }
+    .quickly {
+        justify-content: flex-end;
+        gap: 120px;
+    }
 }
