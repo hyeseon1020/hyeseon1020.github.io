@@ -54,10 +54,10 @@ $(function(){
     let toggleBtn = $('.submenu li');
     console.log(toggleBtn);
 
-    toggleBtn.find('.submenu-pd').slideUp();
-    toggleBtn.click(function(){
-        $(this).find('.toggle-btn').toggleClass('active');
-        $(this).find('.submenu-pd').slideToggle();
-    });
+    // toggleBtn.find('.submenu-pd').slideUp();
+    // toggleBtn.click(function(){
+    //     $(this).find('.toggle-btn').toggleClass('active');
+    //     $(this).find('.submenu-pd').slideToggle();
+    // });
 
 });//script
