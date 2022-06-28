@@ -50,9 +50,6 @@ main .search .search-link span{
     width: 100%;
 }
 .tab-result > div {display: none;}
-.tab-result .content{
-    padding-bottom: calc(var(--line-height)*4);
-}
 .tab-result ul{
     display: flex;
     justify-content: center;
@@ -71,10 +68,92 @@ main .search .search-link span{
 .tab-result .product-content{
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: calc(var(--line-height)*4) 24px;
     justify-content: flex-start;
     width: 1280px;
+    margin-bottom: calc(var(--line-height)*4);
 }
 .tab-result .numbers > li a.active{
     color: var(--primary-c);
+}
+@media (max-width:1400px){
+    .tab-wrapper,.tab-result .product-content{
+        width: 950px;
+    }
+    .secondary.btn {display: none;}
+    footer{position:relative;}
+    .copy {
+        position:absolute;
+        right: 35px;
+        bottom: 15px;
+        color: var(--primary-c);
+    }
+}
+@media (max-width:1024px){
+    img{width: 200px;}
+    .tab-wrapper ,.tab-result .product-content{
+        width: 665px;
+    }
+    .tab-result .content h3{
+        font-size: 12px;
+    }
+    .tab-wrapper div p {
+        font-size: 16px;
+    }
+    footer p {font-size: 12px;}
+    .footer_menu, .footer_contents {flex-wrap: wrap;}
+}
+@media (max-width:768px){
+    main .search {display: none;}
+    .footer_menu{gap: 14px;}
+}
+@media (max-width:674px){
+    .tab-result .product-content {
+        justify-content: space-between;
+    }
+    .tab-menu{gap:15px}
+    .tab-menu .con-tt{
+        font-size: 14px;
+    }
+    .tab-wrapper div p {
+        font-size: 10px;
+    }
+    .tab-result .content h3{
+        font-size: 9px;
+        letter-spacing: -1px;
+    }
+    img{width: 150px;}
+    footer p {font-size: 10px;}
+    footer .content-mg {display:inline-block;}
+    .footer_menu, .footer_contents {
+        gap: 10px;
+    }
+    .link .sns {
+        position:absolute;
+        right: 35px;
+        bottom: 30px;
+    }
+    .link .sns a+a{margin-left: 20px;}
+    .copy {
+        position: unset;
+    }
+}
+@media (max-width:500px){
+    .tab-wrapper{ width: 400px;}
+    .tab-result .product-content{ width: 350px;}
+    .tab-result .product-content {
+        display: flex;
+        justify-content: space-around;
+    }
+    .tab-menu { gap: 10px;}
+    footer{margin-top: 0;}
+    footer p {
+        letter-spacing: -1px;
+    }
+    .footer_menu{
+        gap: 6px;
+    }
+}
+@media (max-width:390px){
+    .tab-wrapper{ width: 360px;}
 }
