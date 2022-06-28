@@ -45,6 +45,7 @@ $(function(){
         e.preventDefault();
         if(search.hasClass('hidden')){
             search.removeClass('hidden');
+            $('#gsearch').focus();
         }else{
             search.addClass('hidden');
         }
@@ -55,10 +56,15 @@ $(function(){
     console.log(toggleBtn);
 
     toggleBtn.click(function(){
-        toggleBtn.find('.toggle-btn').removeClass('active');
-        toggleBtn.find('.submenu-pd').removeClass('toggle');
-        $(this).find('.toggle-btn').toggleClass('active');
-        $(this).find('.submenu-pd').toggleClass('toggle');
+        if($(this).find('.toggle-btn').hasClass('active')){
+            $(this).find('.toggle-btn').removeClass('active');
+            $(this).find('.submenu-pd').removeClass('toggle');
+        }else{
+            toggleBtn.find('.toggle-btn').removeClass('active');
+            toggleBtn.find('.submenu-pd').removeClass('toggle');
+            $(this).find('.toggle-btn').addClass('active');
+            $(this).find('.submenu-pd').addClass('toggle');
+        }
     });
-
+    
 });//script

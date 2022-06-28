@@ -568,6 +568,7 @@ footer .content-mg > div{
     }
 }
 @media (max-width:800px){
+    #menu .sub-tt{font-size: 24px;}
     header .content-mg h1 {
         top: 50%;
         transform: translate(-50%,-45%);
@@ -579,4 +580,73 @@ footer .content-mg > div{
         justify-content: flex-end;
         gap: 120px;
     }
+    .search-pg { width: 460px;}
+    .search input{
+        width: 400px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .quickly {
+        justify-content: flex-start;
+        gap: 62px;
+    }
+}
+@media (max-width:750px){
+    #menu .sub-tt{font-size: 20px;}
+    #menu{background-size: 33vw;}
+}
+@media (max-width:500px){
+    #menu ul li.close{
+        position: absolute;
+        right: 50px;
+    }
+    .next.btn, .prev.btn{
+        color: var(--primary-c);
+    }
+    .next.btn{
+        background-image: url(../img/next_hover_icon.svg);
+    }
+    .prev.btn{
+        background-image: url(../img/prev_hover_icon.svg);
+    }
+    .submenu > li:last-of-type a {
+        right: 0px;
+        bottom: 20px;
+    }
+    .submenu {
+        margin: 0 25px;
+        padding: 163px 0 0;
+    }
+    #menu_wrapper + div .submenu,
+    #content div .submenu{
+        background-position: 0 20px;
+    }
+    #company, #product, #sustainbility, #recruit {
+        transition: none;
+    }
+    .submenu > li > p{font-size: 24px;}
+    .submenu .submenu-pd{
+        padding: 24px;
+        gap: 18px;
+    }
+    .submenu-pd .underline{font-size: 16px;}
+    .search-pg { width: 350px;}
+    .search input{
+        width: 290px;
+    }
+    .quickly{
+        padding: 0 40px;
+        gap: 15px;
+        padding-top: calc(var(--line-height)*5);
+    }
+    .quickly p {
+        width: 154px;
+        letter-spacing: 6px;
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+@media (max-width:414px){
+    #menu{padding-left: 100px;}
 }
