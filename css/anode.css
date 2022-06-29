@@ -49,6 +49,7 @@ body.flow{
     right: 0;
     background: rgba(0, 0, 0, 0.2);
     z-index: 1;
+    overflow-y: auto;
 }
 #query form{
     width: 49%;
@@ -331,4 +332,19 @@ section .car > div{
 }
 .content .more:hover .sub-tt{
     color: var(--primary-c);
+}
+@media (max-width:1588px){
+    .anode {width: 900px;}
+    .anode h2 {font-size:calc(var(--body-fz)*2.625);}
+    .query-nav .next.btn {width: 174px;}
+    .main .query-nav span {bottom: 27px;}
+    h3.sub-tt{font-size:calc(var(--body-fz)*2);}
+    section .car {width: 715px;}
+    .tt {font-size: var(--body-fz);}
+    .content .content-tt{font-size:calc(var(--body-fz)*1.5);}
+    .purepose {gap: 134px;}
+    .function {width: 715px;}
+    .cpt img{width: 310px;}
+    .anode-img img{width:700px;}
+    .content .more div {width: 690px;}
 }
