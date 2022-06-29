@@ -1,6 +1,17 @@
 @import url(common.css);
 
 /* search */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+}
+main{
+    padding-top: calc(var(--line-height)*5);
+}
 main .search{
     background-color: #ededed;
     padding: calc(var(--line-height)*2);
@@ -80,16 +91,11 @@ main .search .search-link span{
     .tab-wrapper,.tab-result .product-content{
         width: 950px;
     }
-    .secondary.btn {display: none;}
-    footer{position:relative;}
-    .copy {
-        position:absolute;
-        right: 35px;
-        bottom: 15px;
-        color: var(--primary-c);
-    }
 }
 @media (max-width:1024px){
+    main{
+        padding-top: calc(var(--line-height)*3);
+    }
     img{width: 200px;}
     .tab-wrapper ,.tab-result .product-content{
         width: 665px;
@@ -100,8 +106,6 @@ main .search .search-link span{
     .tab-wrapper div p {
         font-size: 16px;
     }
-    footer p {font-size: 12px;}
-    .footer_menu, .footer_contents {flex-wrap: wrap;}
 }
 @media (max-width:768px){
     main .search {display: none;}
@@ -123,20 +127,6 @@ main .search .search-link span{
         letter-spacing: -1px;
     }
     img{width: 150px;}
-    footer p {font-size: 10px;}
-    footer .content-mg {display:inline-block;}
-    .footer_menu, .footer_contents {
-        gap: 10px;
-    }
-    .link .sns {
-        position:absolute;
-        right: 35px;
-        bottom: 30px;
-    }
-    .link .sns a+a{margin-left: 20px;}
-    .copy {
-        position: unset;
-    }
 }
 @media (max-width:500px){
     .tab-wrapper{ width: 400px;}
@@ -146,13 +136,6 @@ main .search .search-link span{
         justify-content: space-around;
     }
     .tab-menu { gap: 10px;}
-    footer{margin-top: 0;}
-    footer p {
-        letter-spacing: -1px;
-    }
-    .footer_menu{
-        gap: 6px;
-    }
 }
 @media (max-width:390px){
     .tab-wrapper{ width: 360px;}

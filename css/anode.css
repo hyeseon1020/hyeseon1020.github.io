@@ -1,6 +1,15 @@
 @import url(common.css);
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+}
 main{
     margin: calc(var(--line-height)*6) var(--margin);
+    padding-top: calc(var(--line-height)*5);
     display: flex;
     align-content: space-between;
     gap: calc(var(--line-height)*19);
@@ -24,15 +33,12 @@ main{
 .anode p{
     padding: 0 0 var(--line-height) 589px ;
 }
-.main .query-nav{
-    padding-top: 543px;
-}
 .query-nav .next.btn{
     width: 212px;
     height: 43px;
     background-size: 100%;
 }
-.main .query-nav span{
+.query-nav span{
     font-size: 24px;
     bottom: 15px;
 }
@@ -333,11 +339,16 @@ section .car > div{
 .content .more:hover .sub-tt{
     color: var(--primary-c);
 }
-@media (max-width:1588px){
+@media (max-width:1620px){
     .anode {width: 900px;}
     .anode h2 {font-size:calc(var(--body-fz)*2.625);}
+    .query-nav {
+        position: absolute;
+        right: 0;
+        bottom: 155px;
+    }
     .query-nav .next.btn {width: 174px;}
-    .main .query-nav span {bottom: 27px;}
+    .query-nav span {bottom: 27px;}
     h3.sub-tt{font-size:calc(var(--body-fz)*2);}
     section .car {width: 715px;}
     .tt {font-size: var(--body-fz);}
@@ -347,4 +358,65 @@ section .car > div{
     .cpt img{width: 310px;}
     .anode-img img{width:700px;}
     .content .more div {width: 690px;}
+}
+@media (max-width:1550px){
+    .cpt img{width: 19vw;}
+    .purepose {gap: 8.4vw;}
+    .purepose img {width: 19vw;}
+}
+@media (max-width:1024px){
+    main{
+        margin:0;
+        padding-top: calc(var(--line-height)*6);
+        gap: 200px;
+    }
+    .anode {
+        transform: none;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 235px;
+        box-sizing: border-box;
+        background-image: url(../img/anode@2x.png);
+    }
+    .anode h2 {
+        padding: 0 0 var(--line-height) 399px;
+    }
+    .anode p {
+        padding: 0 0 var(--line-height) 443px;
+    }
+    .query-nav {
+        right: 154px;
+        bottom: 5px;
+    }
+    .query-nav .next.btn{
+        color:var(--primary-c);
+        background-image: url(../img/next_hover_icon.svg);
+    }
+    main section ~ section{margin: 0  var(--line-height);}
+    .purepose {
+        padding-bottom: 100px;
+    }
+    .content .more { height: 673px;}
+}
+@media (max-width:768px){
+    .anode h2 {
+        padding: 17px 0 20px 322px;
+        font-size: 26px;
+    }
+    .anode p { 
+        padding-left: 397px;
+        font-size: 16px;
+    }
+    .query-nav {
+        right: 123px;
+        bottom: 60px;
+    }
+    .query-nav .next.btn {width: 120px;}
+    .query-nav span {font-size: 20px;}
+    h3.sub-tt {
+        font-size: 24px;
+    }
+    .content .content-tt {
+        font-size: 20px;
+    }
 }
