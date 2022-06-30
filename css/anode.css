@@ -426,7 +426,7 @@ section .car > div{
         height: 270px;
     }
     .anode {
-        width: 100vw;
+        width: 100%;
         padding-bottom: 0;
         background-image: url(../img/anode1@2x.png);
     }
@@ -444,7 +444,10 @@ section .car > div{
     }
     .query-nav .next.btn {width: 100px;}
     .query-nav span {font-size: 16px;}
-    section .car {height: 294px;}
+    section .car {
+        height: 300px;
+        background-position: 0 100%;
+    }
     section .car > div {width: 360px;}
     h3.sub-tt {font-size: 18px;}
     .tt {font-size: 14px;}
@@ -460,8 +463,60 @@ section .car > div{
         font-size: 15px;
         text-align: start;
     }
-    .function > div {width: 400px;}
+    .function > div {width: 360px;}
     .function {
-        height: 488px;
-        background-position: 0 5%;}
+        height: 350px;
+        background-position: 0 30%;
+    }
+    .cpt {
+        flex-wrap: wrap;
+        gap: 27px;
+    }
+    .cpt img {width: 348px;}
+    .anode-img img {width: 100%;}
+    .content .more div {width: 100%;}
+    .content .more h3{color: var(--primary-c);}
+}
+@media (max-width:414px){
+    .anode h2 {padding: 0px 0 10px 152px;}
+    .anode p {padding-left: 197px;}
+    .query-nav {
+        right: 25px;
+        bottom: 25px;
+    }
+    .query-nav .next.btn {
+        width: 80px;
+    }
+    .query-nav span {
+        font-size: 12px;
+    }
+    section .car {
+        height: 272px;
+        background-position: 0 100%;
+    }
+}
+@media (max-width:390px){
+    .query-nav {
+        right: 27px;
+        bottom: 45px;
+    }
+    .query-nav .next.btn {
+        width: 65px;
+    }
+    .query-nav span {
+        bottom: 30px;
+    }
+    .next.btn span {
+        left: 0px;
+    }
+    section .car > div {
+        width: 318px;
+    }
+    .function {
+        background-position: 0 38%;
+    }
+    .function > div {
+        width: 311px;
+    }
+
 }
