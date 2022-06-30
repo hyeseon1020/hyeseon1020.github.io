@@ -55,7 +55,6 @@ body.flow{
     right: 0;
     background: rgba(0, 0, 0, 0.2);
     z-index: 1;
-    overflow-y: auto;
 }
 #query form{
     width: 49%;
@@ -117,7 +116,7 @@ label.check::before{
     gap: 70px;
 }
 .select .label{
-    border-bottom: 1px solid var(--secondary-c);
+    border-bottom: 2px solid var(--secondary-c);
     padding: 0 5px 8px;
     box-sizing: border-box;
 }
@@ -137,7 +136,7 @@ label.check::before{
     visibility: hidden;
 }
 .select.rotate .optionList{
-    transform: translateY(20px);
+    transform: translateY(24px);
     opacity: 1;
     visibility: visible;
 }
@@ -255,7 +254,6 @@ span.bad-input{
     position: absolute;
     white-space: nowrap;
     transform: translateY(100%);
-    margin-left: 200px;
     opacity: 0;
     animation: fadeIn 0.5s forwards;
 }
@@ -363,6 +361,7 @@ section .car > div{
     .cpt img{width: 19vw;}
     .purepose {gap: 8.4vw;}
     .purepose img {width: 19vw;}
+    span.bad-input {transform: translate(-30% , 100%);}
 }
 @media (max-width:1024px){
     main{
@@ -384,6 +383,16 @@ section .car > div{
     .anode p {
         padding: 0 0 var(--line-height) 443px;
     }
+    #query form {padding: calc(var(--line-height)*2);}
+    #close {right: 25px;}
+    #query form > h3, #query form > h4 {
+        font-size: 28px;
+    }
+    form .con-tt {
+        font-size: 20px;
+    }
+    .select .optionList { left: 148px;}
+    textarea {width: 62%;}
     .query-nav {
         right: 154px;
         bottom: 5px;
@@ -406,6 +415,19 @@ section .car > div{
     .anode p { 
         padding-left: 397px;
         font-size: 16px;
+    }
+    #query form {
+        width: 58%;
+        height: 766px;}
+    #query form > h3, #query form > h4 {
+        font-size: 24px;
+    }
+    .select .optionList {left: 139px;}
+    form .con-tt {
+        font-size: 18px;
+    }
+    span.bad-input {
+        font-size: 14px;
     }
     .query-nav {
         right: 123px;
@@ -437,6 +459,35 @@ section .car > div{
     .anode p { 
         padding-left: 290px;
         font-size: 14px;
+    }
+    #query{position: absolute;}
+    #query form {
+        width: 100vw;
+        height: 100vh;
+        padding: 100px 25px;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+    #close {
+        top: 98px;
+    }
+    #query form > h3, #query form > h4 {
+        font-size: 24px;
+    }
+    form .con-tt {
+        font-size: 16px;
+    }
+    form .tt{font-size: 12px;}
+    .checkbox {gap: 86px;}
+    .check-box label {padding-left: 8px;}
+    .select .optionList {left: 130px;}
+    .select .optionList li {font-size: 14px;}
+    .title{gap: 114px;}
+    .title input {width: 50%;}
+    textarea {
+        width: 56%;
+        font-size: 12px;
     }
     .query-nav {
         right: 10px;
@@ -479,7 +530,15 @@ section .car > div{
 }
 @media (max-width:414px){
     .anode h2 {padding: 0px 0 10px 152px;}
+    form > h4 {
+        font-size: 20px;
+    }
     .anode p {padding-left: 197px;}
+    .select .optionList li {font-size: 12px;}
+    span.bad-input {
+        font-size: 12px;
+        transform: translate(-43% , 100%);
+    }
     .query-nav {
         right: 25px;
         bottom: 25px;
@@ -496,27 +555,23 @@ section .car > div{
     }
 }
 @media (max-width:390px){
+    .checkbox { gap: 50px;}
+    span.bad-input { transform: translate(-49% , 100%);}
+    .select {gap: 37px;}
+    .select .optionList {left: 90px;}
+    .product-title { gap: 52px;}
+    .title {gap: 74px;}
+    .query-con {gap: 45px;}
+    .email-form { gap: 58px; }
     .query-nav {
         right: 27px;
         bottom: 45px;
     }
-    .query-nav .next.btn {
-        width: 65px;
-    }
-    .query-nav span {
-        bottom: 30px;
-    }
-    .next.btn span {
-        left: 0px;
-    }
-    section .car > div {
-        width: 318px;
-    }
-    .function {
-        background-position: 0 38%;
-    }
-    .function > div {
-        width: 311px;
-    }
+    .query-nav .next.btn {width: 65px;}
+    .query-nav span {bottom: 30px;}
+    .next.btn span {left: 0px;}
+    section .car > div { width: 318px;}
+    .function {background-position: 0 38%;}
+    .function > div { width: 311px;}
 
 }
