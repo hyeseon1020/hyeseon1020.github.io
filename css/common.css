@@ -368,7 +368,7 @@ header nav li:hover .underline::after{
 /* search */
 header > .search{
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     background-color: #ededed;
     position: fixed;
     top: 136.9px;
