@@ -460,7 +460,7 @@ section .car > div{
         padding-left: 290px;
         font-size: 14px;
     }
-    #query{position: absolute;}
+    /* #query{position: absolute;} */
     #query form {
         width: 100vw;
         height: 100vh;
